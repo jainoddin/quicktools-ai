@@ -16,11 +16,11 @@ export const metadata: Metadata = {
 
 export default function AIImageGeneratorPage() {
   return (
-    <div className="min-h-screen bg-[#F8FAFC] flex flex-col font-sans selection:bg-[#6D5EF8] selection:text-white">
+    <div className="flex-grow bg-[#F8FAFC] flex flex-col font-sans selection:bg-[#6D5EF8] selection:text-white">
       
       {/* Breadcrumb Navigation */}
-      <div className="bg-white border-b border-[#E5E7EB]">
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 h-12 flex items-center text-sm">
+      <div className="bg-transparent pt-[15px] pb-[25px]">
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 flex items-center text-sm">
           <Link href="/" className="flex items-center text-[#6B7280] hover:text-[#111827] transition-colors">
             <Home className="w-4 h-4 mr-1.5" />
             Home
@@ -34,7 +34,7 @@ export default function AIImageGeneratorPage() {
         </div>
       </div>
 
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-grow w-full">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 pb-8 flex-grow w-full">
         <ImageGeneratorClient />
       </div>
     </div>

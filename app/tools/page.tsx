@@ -4,7 +4,8 @@ import {
   Search, Zap, Image as ImageIcon, PenTool, Code, Video,
   ArrowRight, LayoutGrid, Moon, MessageCircle, Palette, 
   Briefcase, TrendingUp, Crown, Flame, Sparkles, Star, 
-  Clock, Filter, ChevronDown, Globe, Share2, Mail
+  Clock, Filter, ChevronDown, Globe, Share2, Mail,
+  Home, ChevronRight
 } from 'lucide-react';
 import Link from 'next/link';
 
@@ -82,19 +83,31 @@ const tools = [
 
 export default function AllToolsPage() {
   return (
-    <div className="min-h-screen bg-[#F8FAFC] text-[#111827] font-sans selection:bg-[#6D5EF8] selection:text-white flex flex-col">
+    <div className="flex-grow bg-[#F8FAFC] text-[#111827] font-sans selection:bg-[#6D5EF8] selection:text-white flex flex-col">
       
 
 
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-8 relative flex-grow w-full">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 pb-8 pt-[15px] relative flex-grow w-full">
         {/* Background Gradients */}
-        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-purple-200/40 rounded-full blur-[100px] -z-10 pointer-events-none translate-x-1/3 -translate-y-1/4"></div>
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-purple-200/40 rounded-full blur-[100px] -z-10 pointer-events-none -translate-y-1/4"></div>
         <div className="absolute bottom-0 left-1/2 w-[600px] h-[600px] bg-blue-100/30 rounded-full blur-[120px] -z-10 pointer-events-none translate-x-1/4 translate-y-1/3"></div>
+
+        {/* Top Navigation Row */}
+        <div className="flex items-center mb-[25px]">
+          {/* Breadcrumbs */}
+          <nav className="flex items-center space-x-2 text-sm font-medium text-[#6B7280]">
+            <Link href="/" className="hover:text-[#111827] transition-colors flex items-center gap-1.5">
+              <Home className="w-4 h-4" /> Home
+            </Link>
+            <ChevronRight className="w-4 h-4 text-gray-400" />
+            <span className="text-[#6D5EF8] font-bold">All Tools</span>
+          </nav>
+        </div>
 
         <div className="flex flex-col lg:flex-row gap-8">
           
           {/* Left Sidebar */}
-          <aside className="w-full lg:w-[260px] shrink-0 space-y-6">
+          <aside className="w-full lg:w-[260px] shrink-0 space-y-6 lg:sticky lg:top-24 lg:self-start">
             
             {/* Categories List */}
             <div>
@@ -195,7 +208,7 @@ export default function AllToolsPage() {
             </div>
 
             {/* Tools Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
               {tools.map((tool, index) => (
                 <Link href={tool.slug} key={index} className="group">
                   <div className="bg-white p-5 rounded-2xl border border-[#E5E7EB] hover:border-[#6D5EF8] hover:shadow-xl hover:shadow-[#6D5EF8]/10 transition-all duration-300 relative h-full flex flex-col">

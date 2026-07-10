@@ -8,14 +8,14 @@ import {
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-[#F8FAFC] text-[#111827] font-sans selection:bg-[#4F46E5] selection:text-white">
+    <div className="flex-grow bg-[#F8FAFC] text-[#111827] font-sans selection:bg-[#4F46E5] selection:text-white">
       
 
 
       {/* 2. Hero Section */}
       <header className="relative max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-12 lg:pt-12 lg:pb-20 overflow-hidden">
         {/* Background Glow */}
-        <div className="absolute top-0 right-0 -z-10 w-[600px] lg:w-[800px] h-[600px] lg:h-[800px] bg-[#7C3AED]/20 rounded-full blur-3xl opacity-50 translate-x-1/3 -translate-y-1/4"></div>
+        <div className="absolute top-0 right-0 -z-10 w-[600px] lg:w-[800px] h-[600px] lg:h-[800px] bg-[#7C3AED]/20 rounded-full blur-3xl opacity-50 -translate-y-1/4"></div>
         
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
