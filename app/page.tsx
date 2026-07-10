@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { 
   Search, Moon, Zap, Image as ImageIcon, PenTool, Video, Code, 
   Briefcase, Palette, Mic, LayoutGrid, Star, Check, ArrowRight, 
@@ -9,78 +10,7 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-[#F8FAFC] text-[#111827] font-sans selection:bg-[#4F46E5] selection:text-white">
       
-      {/* 1. Navbar */}
-      <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-[#E5E7EB]">
-        <style dangerouslySetInnerHTML={{__html: `
-          @keyframes textSlideIn {
-            0% { opacity: 0; transform: translateX(20px); }
-            100% { opacity: 1; transform: translateX(0); }
-          }
-          @keyframes lightSweep {
-            0% { left: -100%; opacity: 0; }
-            30% { opacity: 1; }
-            70% { opacity: 1; }
-            100% { left: 150%; opacity: 0; }
-          }
-          .animate-reveal-text {
-            opacity: 0;
-            animation: textSlideIn 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards 0.3s;
-          }
-          .sweep-mask {
-            position: relative;
-            overflow: hidden;
-            display: inline-block;
-          }
-          .sweep-mask::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            width: 25px;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.9), transparent);
-            transform: skewX(-20deg);
-            animation: lightSweep 4s cubic-bezier(0.16, 1, 0.3, 1) infinite 2s;
-            pointer-events: none;
-          }
-        `}} />
-        
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-          <div className="flex items-center gap-2 group cursor-pointer">
-            <div className="relative flex items-center justify-center transition-transform duration-300 group-hover:-translate-y-1">
-              <div className="absolute inset-0 bg-[#4F46E5] rounded-full blur-md opacity-0 group-hover:opacity-80 transition-opacity duration-500 animate-pulse"></div>
-              <Zap className="w-7 h-7 text-[#4F46E5] fill-[#4F46E5] relative z-10 group-hover:scale-125 group-hover:rotate-[20deg] group-hover:text-fuchsia-500 group-hover:fill-fuchsia-500 transition-all duration-300" />
-            </div>
-            
-            <span className="text-2xl font-black tracking-tighter animate-reveal-text sweep-mask px-1">
-              <span className="text-[#111827] transition-all duration-300 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#4F46E5] group-hover:to-fuchsia-500">QuickTools</span>
-              <span className="text-[#4F46E5] transition-colors duration-300 group-hover:text-fuchsia-500">.ai</span>
-            </span>
-          </div>
-          <div className="hidden lg:flex items-center gap-8 text-sm font-medium text-[#6B7280]">
-            <a href="#" className="text-[#111827] bg-[#F3F4F6] px-3 py-1.5 rounded-full">Home</a>
-            <a href="#" className="hover:text-[#111827] transition-colors">All Tools</a>
-            <div className="flex items-center gap-1 cursor-pointer hover:text-[#111827] transition-colors">
-              Categories <ChevronDown className="w-4 h-4" />
-            </div>
-            <a href="#" className="hover:text-[#111827] transition-colors">Blog</a>
-            <a href="#" className="hover:text-[#111827] transition-colors">Pricing</a>
-            <a href="#" className="hover:text-[#111827] transition-colors">About</a>
-            <a href="#" className="hover:text-[#111827] transition-colors">Contact</a>
-          </div>
-          <div className="flex items-center gap-2 sm:gap-4">
-            <button className="p-2 text-[#6B7280] hover:bg-gray-100 rounded-full transition-colors hidden sm:block">
-              <Moon className="w-5 h-5" />
-            </button>
-            <button className="text-sm font-semibold text-[#111827] hover:text-[#4F46E5] transition-colors px-4 py-2 hidden sm:block">
-              Login
-            </button>
-            <button className="bg-[#4F46E5] hover:bg-[#4338CA] text-white text-sm font-semibold px-4 sm:px-5 py-2 sm:py-2.5 rounded-lg transition-all shadow-sm hover:shadow-md">
-              Sign Up
-            </button>
-          </div>
-        </div>
-      </nav>
+
 
       {/* 2. Hero Section */}
       <header className="relative max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-12 lg:pt-12 lg:pb-20 overflow-hidden">
@@ -151,7 +81,7 @@ export default function HomePage() {
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] bg-gradient-to-br from-purple-200/50 to-indigo-200/50 rounded-full z-0 pointer-events-none blur-md"></div>
             
             {/* User's uploaded robot image from public folder */}
-            <img src="https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/1b9be0e4-c385-49a5-b0b5-ef158e8ef402.png" alt="AI Robot" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] lg:w-[450px] z-10 drop-shadow-2xl hover:scale-105 transition-transform duration-500" />
+            <Image src="https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/1b9be0e4-c385-49a5-b0b5-ef158e8ef402.png" width={450} height={450} alt="AI Robot" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] lg:w-[450px] z-10 drop-shadow-2xl hover:scale-105 transition-transform duration-500" priority />
             
             {/* Floating Card 1 */}
             <div className="absolute top-[10%] lg:top-[15%] left-[0%] lg:left-[5%] z-20 bg-white/90 backdrop-blur-md p-3 rounded-xl shadow-lg border border-white flex items-center gap-3 animate-bounce" style={{animationDuration: '3s'}}>
@@ -279,7 +209,7 @@ export default function HomePage() {
             {name: "Rohit Verma", role: "Entrepreneur", text: "The best AI tools collection platform I've ever used. Highly recommended for startups!", img: "33"}
           ].map((user, i) => (
             <div key={i} className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex gap-4 hover:shadow-md transition-shadow">
-              <img src={`https://i.pravatar.cc/150?img=${user.img}`} alt={user.name} className="w-12 h-12 rounded-full object-cover shrink-0" />
+              <Image src={`https://i.pravatar.cc/150?img=${user.img}`} width={48} height={48} alt={user.name} className="w-12 h-12 rounded-full object-cover shrink-0" />
               <div>
                 <p className="text-xs sm:text-sm text-[#111827] mb-3 leading-relaxed">"{user.text}"</p>
                 <div className="flex flex-col sm:flex-row justify-between sm:items-center gap-2 sm:gap-0">
@@ -344,82 +274,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 9. Footer */}
-      <footer className="bg-white border-t border-gray-100 pt-16 pb-8 mt-8">
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-6 gap-8 mb-12">
-            <div className="col-span-2 md:col-span-2">
-              <div className="flex items-center gap-2 mb-4">
-                <Zap className="w-6 h-6 text-[#4F46E5] fill-[#4F46E5]" />
-                <span className="text-xl font-bold">QuickTools.ai</span>
-              </div>
-              <p className="text-sm text-[#6B7280] mb-6 pr-4">All AI tools you need in one place. Save time, work smarter, and achieve more with AI.</p>
-              <div className="flex items-center gap-4 text-gray-400">
-                <Globe className="w-5 h-5 hover:text-[#4F46E5] cursor-pointer transition-colors"/>
-                <MessageCircle className="w-5 h-5 hover:text-[#4F46E5] cursor-pointer transition-colors"/>
-                <Share2 className="w-5 h-5 hover:text-[#4F46E5] cursor-pointer transition-colors"/>
-                <Mail className="w-5 h-5 hover:text-[#4F46E5] cursor-pointer transition-colors"/>
-              </div>
-            </div>
-            
-            <div className="col-span-1">
-              <h4 className="font-bold text-sm mb-4 text-[#111827]">Quick Links</h4>
-              <ul className="space-y-3 text-sm text-[#6B7280]">
-                <li><a href="#" className="hover:text-[#4F46E5] transition-colors">Home</a></li>
-                <li><a href="#" className="hover:text-[#4F46E5] transition-colors">All Tools</a></li>
-                <li><a href="#" className="hover:text-[#4F46E5] transition-colors">Categories</a></li>
-                <li><a href="#" className="hover:text-[#4F46E5] transition-colors">Pricing</a></li>
-                <li><a href="#" className="hover:text-[#4F46E5] transition-colors">Blog</a></li>
-                <li><a href="#" className="hover:text-[#4F46E5] transition-colors">About Us</a></li>
-                <li><a href="#" className="hover:text-[#4F46E5] transition-colors">Contact Us</a></li>
-              </ul>
-            </div>
-            
-            <div className="col-span-1">
-              <h4 className="font-bold text-sm mb-4 text-[#111827]">Categories</h4>
-              <ul className="space-y-3 text-sm text-[#6B7280]">
-                <li><a href="#" className="hover:text-[#4F46E5] transition-colors">Image Tools</a></li>
-                <li><a href="#" className="hover:text-[#4F46E5] transition-colors">Writing Tools</a></li>
-                <li><a href="#" className="hover:text-[#4F46E5] transition-colors">Video Tools</a></li>
-                <li><a href="#" className="hover:text-[#4F46E5] transition-colors">Code Tools</a></li>
-                <li><a href="#" className="hover:text-[#4F46E5] transition-colors">SEO Tools</a></li>
-                <li><a href="#" className="hover:text-[#4F46E5] transition-colors">Business Tools</a></li>
-                <li><a href="#" className="hover:text-[#4F46E5] transition-colors">Audio Tools</a></li>
-              </ul>
-            </div>
-
-            <div className="col-span-2 md:col-span-1">
-              <h4 className="font-bold text-sm mb-4 text-[#111827]">Support</h4>
-              <ul className="space-y-3 text-sm text-[#6B7280]">
-                <li><a href="#" className="hover:text-[#4F46E5] transition-colors">Help Center</a></li>
-                <li><a href="#" className="hover:text-[#4F46E5] transition-colors">FAQs</a></li>
-                <li><a href="#" className="hover:text-[#4F46E5] transition-colors">Privacy Policy</a></li>
-                <li><a href="#" className="hover:text-[#4F46E5] transition-colors">Terms of Service</a></li>
-                <li><a href="#" className="hover:text-[#4F46E5] transition-colors">Refund Policy</a></li>
-                <li><a href="#" className="hover:text-[#4F46E5] transition-colors">Contact Us</a></li>
-              </ul>
-            </div>
-
-            <div className="col-span-2 md:col-span-1">
-              <h4 className="font-bold text-sm mb-4 text-[#111827]">Subscribe to our newsletter</h4>
-              <p className="text-xs text-[#6B7280] mb-4">Get the latest updates, new tools, tips, and offers.</p>
-              <div className="flex flex-col gap-2">
-                <input type="email" placeholder="Enter your email" className="w-full px-4 py-2.5 rounded-lg border border-gray-200 text-sm focus:outline-none focus:border-[#4F46E5] focus:ring-1 focus:ring-[#4F46E5] transition-all bg-[#F8FAFC]"/>
-                <button className="bg-[#4F46E5] text-white font-semibold py-2.5 rounded-lg text-sm hover:bg-[#4338CA] transition-colors shadow-sm w-full">Subscribe</button>
-              </div>
-            </div>
-          </div>
-          
-          <div className="flex flex-col md:flex-row items-center justify-between pt-8 border-t border-gray-100 text-xs text-[#6B7280]">
-            <div>© 2024 QuickTools.ai. All rights reserved.</div>
-            <div className="flex gap-6 mt-4 md:mt-0">
-              <a href="#" className="hover:text-[#4F46E5] transition-colors">Privacy Policy</a>
-              <a href="#" className="hover:text-[#4F46E5] transition-colors">Terms of Service</a>
-              <a href="#" className="hover:text-[#4F46E5] transition-colors">Cookies Policy</a>
-            </div>
-          </div>
-        </div>
-      </footer>
 
     </div>
   );
