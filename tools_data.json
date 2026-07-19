@@ -6,6 +6,7 @@
     "color": "bg-[#6D5EF8] text-white",
     "slug": "ai-image-generator",
     "category": "AI Image",
+    "isPremium": false,
     "createdAt": "2023-01-01"
   },
   {
@@ -15,6 +16,7 @@
     "color": "bg-[#10B981] text-white",
     "slug": "background-remover",
     "category": "AI Image",
+    "isPremium": false,
     "createdAt": "2023-02-01"
   },
   {
@@ -24,6 +26,7 @@
     "color": "bg-[#F43F5E] text-white",
     "slug": "ai-writer",
     "category": "AI Writer",
+    "isPremium": false,
     "createdAt": "2023-03-01"
   },
   {
@@ -33,6 +36,7 @@
     "color": "bg-[#8B5CF6] text-white",
     "slug": "ai-video-generator",
     "category": "AI Video",
+    "isPremium": false,
     "createdAt": "2026-07-10"
   },
   {
@@ -42,6 +46,7 @@
     "color": "bg-[#0EA5E9] text-white",
     "slug": "ai-code-generator",
     "category": "AI Code",
+    "isPremium": false,
     "createdAt": "2026-07-05"
   },
   {
@@ -51,6 +56,7 @@
     "color": "bg-[#EC4899] text-white",
     "slug": "css-box-shadow-generator",
     "category": "Developer Tools",
+    "isPremium": false,
     "createdAt": "2026-07-19"
   },
   {
@@ -60,6 +66,7 @@
     "color": "bg-[#3B82F6] text-white",
     "slug": "ai-interview-questions",
     "category": "Business",
+    "isPremium": false,
     "createdAt": "2026-07-19"
   },
   {
@@ -69,6 +76,7 @@
     "color": "bg-[#6366F1] text-white",
     "slug": "ai-sql-generator",
     "category": "Developer Tools",
+    "isPremium": false,
     "createdAt": "2026-07-19"
   },
   {
@@ -78,6 +86,7 @@
     "color": "bg-[#F43F5E] text-white",
     "slug": "ai-slogan-generator",
     "category": "Business",
+    "isPremium": false,
     "createdAt": "2026-07-19"
   },
   {
@@ -87,6 +96,7 @@
     "color": "bg-[#10B981] text-white",
     "slug": "ai-elevator-pitch",
     "category": "Business",
+    "isPremium": false,
     "createdAt": "2026-07-19"
   },
   {
@@ -96,6 +106,7 @@
     "color": "bg-[#8B5CF6] text-white",
     "slug": "ai-video-script",
     "category": "Social Media",
+    "isPremium": false,
     "createdAt": "2026-07-19"
   },
   {
@@ -105,6 +116,7 @@
     "color": "bg-[#F59E0B] text-white",
     "slug": "ai-job-description",
     "category": "Business",
+    "isPremium": false,
     "createdAt": "2026-07-19"
   },
   {
@@ -114,6 +126,7 @@
     "color": "bg-[#EC4899] text-white",
     "slug": "ai-hashtag-generator",
     "category": "Social Media",
+    "isPremium": false,
     "createdAt": "2026-07-19"
   },
   {
@@ -123,6 +136,7 @@
     "color": "bg-[#6D5EF8] text-white",
     "slug": "ai-story-generator",
     "category": "Writing",
+    "isPremium": false,
     "createdAt": "2026-07-19"
   },
   {
@@ -132,6 +146,7 @@
     "color": "bg-[#14B8A6] text-white",
     "slug": "ai-travel-planner",
     "category": "Utilities",
+    "isPremium": false,
     "createdAt": "2026-07-19"
   },
   {
@@ -141,6 +156,7 @@
     "color": "bg-[#F97316] text-white",
     "slug": "ai-meal-planner",
     "category": "Utilities",
+    "isPremium": false,
     "createdAt": "2026-07-19"
   },
   {
@@ -150,6 +166,7 @@
     "color": "bg-[#A855F7] text-white",
     "slug": "ai-poem-generator",
     "category": "Writing",
+    "isPremium": false,
     "createdAt": "2026-07-19"
   },
   {
@@ -159,6 +176,7 @@
     "color": "bg-[#06B6D4] text-white",
     "slug": "ai-review-responder",
     "category": "Business",
+    "isPremium": false,
     "createdAt": "2026-07-19"
   },
   {
@@ -168,6 +186,7 @@
     "color": "bg-[#84CC16] text-white",
     "slug": "ai-event-planner",
     "category": "Utilities",
+    "isPremium": false,
     "createdAt": "2026-07-19"
   },
   {
@@ -177,6 +196,7 @@
     "color": "bg-[#EF4444] text-white",
     "slug": "ai-youtube-tags",
     "category": "Social Media",
+    "isPremium": false,
     "createdAt": "2026-07-19"
   },
   {
@@ -186,6 +206,7 @@
     "color": "bg-[#64748B] text-white",
     "slug": "ai-apology-letter",
     "category": "Writing",
+    "isPremium": false,
     "createdAt": "2026-07-19"
   },
   {
@@ -195,6 +216,7 @@
     "color": "bg-[#38BDF8] text-white",
     "slug": "ai-dream-interpreter",
     "category": "Utilities",
+    "isPremium": false,
     "createdAt": "2026-07-19"
   },
   {
@@ -204,6 +226,7 @@
     "color": "bg-[#F97316] text-white",
     "slug": "ai-git-command",
     "category": "Developer Tools",
+    "isPremium": false,
     "createdAt": "2026-07-19"
   },
   {
@@ -213,6 +236,7 @@
     "color": "bg-[#10B981] text-white",
     "slug": "ai-real-estate-listing",
     "category": "Business",
+    "isPremium": false,
     "createdAt": "2026-07-19"
   },
   {
@@ -222,6 +246,7 @@
     "color": "bg-[#64748B] text-white",
     "slug": "ai-resignation-letter",
     "category": "Writing",
+    "isPremium": false,
     "createdAt": "2026-07-19"
   },
   {
@@ -231,6 +256,7 @@
     "color": "bg-[#FBBF24] text-white",
     "slug": "ai-emoji-translator",
     "category": "Social Media",
+    "isPremium": false,
     "createdAt": "2026-07-19"
   },
   {
@@ -240,6 +266,7 @@
     "color": "bg-[#F97316] text-white",
     "slug": "ai-summarizer",
     "category": "Productivity",
+    "isPremium": false,
     "createdAt": "2026-07-19"
   },
   {
@@ -249,6 +276,7 @@
     "color": "bg-[#06B6D4] text-white",
     "slug": "ai-translator",
     "category": "Productivity",
+    "isPremium": false,
     "createdAt": "2026-07-19"
   },
   {
@@ -258,6 +286,7 @@
     "color": "bg-[#8B5CF6] text-white",
     "slug": "ai-resume-builder",
     "category": "Productivity",
+    "isPremium": false,
     "createdAt": "2026-07-19"
   },
   {
@@ -267,6 +296,7 @@
     "color": "bg-[#EC4899] text-white",
     "slug": "ai-color-palette",
     "category": "Design",
+    "isPremium": false,
     "createdAt": "2026-07-19"
   },
   {
@@ -276,6 +306,7 @@
     "color": "bg-[#14B8A6] text-white",
     "slug": "url-shortener",
     "category": "Utilities",
+    "isPremium": false,
     "createdAt": "2026-07-19"
   },
   {
@@ -285,6 +316,7 @@
     "color": "bg-[#EF4444] text-white",
     "slug": "ai-grammar-checker",
     "category": "Productivity",
+    "isPremium": false,
     "createdAt": "2026-07-19"
   },
   {
@@ -294,6 +326,7 @@
     "color": "bg-[#3B82F6] text-white",
     "slug": "qr-code-generator",
     "category": "Utilities",
+    "isPremium": false,
     "createdAt": "2026-07-19"
   },
   {
@@ -303,6 +336,7 @@
     "color": "bg-[#8B5CF6] text-white",
     "slug": "ai-caption-generator",
     "category": "Business",
+    "isPremium": false,
     "createdAt": "2026-07-19"
   },
   {
@@ -312,6 +346,7 @@
     "color": "bg-[#10B981] text-white",
     "slug": "ai-email-generator",
     "category": "Productivity",
+    "isPremium": false,
     "createdAt": "2026-07-19"
   },
   {
@@ -321,6 +356,7 @@
     "color": "bg-[#F59E0B] text-white",
     "slug": "ai-business-name-generator",
     "category": "Business",
+    "isPremium": false,
     "createdAt": "2026-07-19"
   },
   {
@@ -330,6 +366,7 @@
     "color": "bg-[#F59E0B] text-white",
     "slug": "ai-blog-idea-generator",
     "category": "AI Writer",
+    "isPremium": false,
     "createdAt": "2026-07-20"
   },
   {
@@ -339,6 +376,7 @@
     "color": "bg-[#3B82F6] text-white",
     "slug": "ai-article-outline-generator",
     "category": "AI Writer",
+    "isPremium": false,
     "createdAt": "2026-07-20"
   },
   {
@@ -348,6 +386,7 @@
     "color": "bg-[#10B981] text-white",
     "slug": "ai-paraphraser",
     "category": "Productivity",
+    "isPremium": false,
     "createdAt": "2026-07-20"
   },
   {
@@ -357,6 +396,7 @@
     "color": "bg-[#EC4899] text-white",
     "slug": "ai-product-description",
     "category": "Business",
+    "isPremium": false,
     "createdAt": "2026-07-20"
   },
   {
@@ -366,6 +406,7 @@
     "color": "bg-[#6D5EF8] text-white",
     "slug": "ai-cover-letter",
     "category": "Business",
+    "isPremium": false,
     "createdAt": "2026-07-20"
   },
   {
@@ -375,6 +416,7 @@
     "color": "bg-[#F43F5E] text-white",
     "slug": "ai-seo-meta-generator",
     "category": "SEO",
+    "isPremium": false,
     "createdAt": "2026-07-20"
   },
   {
@@ -384,6 +426,7 @@
     "color": "bg-[#EF4444] text-white",
     "slug": "ai-youtube-title",
     "category": "Social Media",
+    "isPremium": false,
     "createdAt": "2026-07-20"
   },
   {
@@ -393,6 +436,7 @@
     "color": "bg-[#0EA5E9] text-white",
     "slug": "ai-tweet-thread",
     "category": "Social Media",
+    "isPremium": false,
     "createdAt": "2026-07-20"
   },
   {
@@ -402,6 +446,7 @@
     "color": "bg-[#8B5CF6] text-white",
     "slug": "ai-hook-generator",
     "category": "Social Media",
+    "isPremium": false,
     "createdAt": "2026-07-20"
   },
   {
@@ -411,6 +456,7 @@
     "color": "bg-[#14B8A6] text-white",
     "slug": "ai-ad-copy",
     "category": "Marketing",
+    "isPremium": false,
     "createdAt": "2026-07-20"
   },
   {
@@ -420,6 +466,7 @@
     "color": "bg-[#0A66C2] text-white",
     "slug": "ai-linkedin-bio",
     "category": "Social Media",
+    "isPremium": false,
     "createdAt": "2026-07-20"
   },
   {
@@ -429,6 +476,7 @@
     "color": "bg-[#10B981] text-white",
     "slug": "password-generator",
     "category": "Utilities",
+    "isPremium": false,
     "createdAt": "2026-07-20"
   },
   {
@@ -438,6 +486,7 @@
     "color": "bg-[#3B82F6] text-white",
     "slug": "ai-regex-generator",
     "category": "Utilities",
+    "isPremium": false,
     "createdAt": "2026-07-20"
   },
   {
@@ -447,6 +496,7 @@
     "color": "bg-[#8B5CF6] text-white",
     "slug": "ai-code-explainer",
     "category": "Utilities",
+    "isPremium": false,
     "createdAt": "2026-07-20"
   },
   {
@@ -456,6 +506,7 @@
     "color": "bg-[#F97316] text-white",
     "slug": "json-formatter",
     "category": "Utilities",
+    "isPremium": false,
     "createdAt": "2026-07-20"
   },
   {
@@ -465,6 +516,7 @@
     "color": "bg-[#6B7280] text-white",
     "slug": "lorem-ipsum",
     "category": "Utilities",
+    "isPremium": false,
     "createdAt": "2026-07-20"
   },
   {
@@ -474,6 +526,7 @@
     "color": "bg-[#EF4444] text-white",
     "slug": "ai-recipe-generator",
     "category": "Lifestyle",
+    "isPremium": false,
     "createdAt": "2026-07-20"
   },
   {
@@ -483,6 +536,7 @@
     "color": "bg-[#06B6D4] text-white",
     "slug": "ai-workout-plan",
     "category": "Lifestyle",
+    "isPremium": false,
     "createdAt": "2026-07-20"
   },
   {
@@ -492,6 +546,7 @@
     "color": "bg-[#8B5CF6] text-white",
     "slug": "ai-quote-generator",
     "category": "Lifestyle",
+    "isPremium": false,
     "createdAt": "2026-07-20"
   },
   {
@@ -501,6 +556,347 @@
     "color": "bg-[#EC4899] text-white",
     "slug": "ai-gift-idea",
     "category": "Lifestyle",
+    "isPremium": false,
     "createdAt": "2026-07-20"
+  },
+  {
+    "name": "AI Business Plan Generator",
+    "description": "Generate a complete 10-page business plan with executive summary, market analysis, and financial projections.",
+    "iconName": "Briefcase",
+    "color": "bg-[#F59E0B]",
+    "slug": "ai-business-plan",
+    "category": "Business",
+    "isPremium": false,
+    "createdAt": "2026-07-19T18:20:54.025Z"
+  },
+  {
+    "name": "AI Sales Funnel Copywriter",
+    "description": "Write landing page copy, email sequences, and ad copy all at once.",
+    "iconName": "Megaphone",
+    "color": "bg-[#EF4444]",
+    "slug": "ai-sales-funnel",
+    "category": "Marketing",
+    "isPremium": false,
+    "createdAt": "2026-07-19T18:20:54.033Z"
+  },
+  {
+    "name": "AI E-Book Writer",
+    "description": "Generate chapter-by-chapter outlines and content for an entire e-book.",
+    "iconName": "BookOpen",
+    "color": "bg-[#8B5CF6]",
+    "slug": "ai-ebook-writer",
+    "category": "Writing",
+    "isPremium": false,
+    "createdAt": "2026-07-19T18:20:54.033Z"
+  },
+  {
+    "name": "AI Course Curriculum Creator",
+    "description": "Generate a full 4-week course syllabus, lesson plans, and quizzes.",
+    "iconName": "GraduationCap",
+    "color": "bg-[#10B981]",
+    "slug": "ai-course-creator",
+    "category": "Education",
+    "isPremium": false,
+    "createdAt": "2026-07-19T18:20:54.033Z"
+  },
+  {
+    "name": "AI SEO Topical Map Builder",
+    "description": "Generate a full SEO content cluster map for an entire month for a niche.",
+    "iconName": "Map",
+    "color": "bg-[#06B6D4]",
+    "slug": "ai-seo-topical-map",
+    "category": "SEO",
+    "isPremium": false,
+    "createdAt": "2026-07-19T18:20:54.033Z"
+  },
+  {
+    "name": "AI Pitch Deck Generator",
+    "description": "Generate slide-by-slide text, data points, and script for a startup pitch deck.",
+    "iconName": "Presentation",
+    "color": "bg-[#6366F1]",
+    "slug": "ai-pitch-deck",
+    "category": "Business",
+    "isPremium": false,
+    "createdAt": "2026-07-19T18:20:54.033Z"
+  },
+  {
+    "name": "AI App Architecture Planner",
+    "description": "Generate the full tech stack, database schema, and API endpoints documentation for a new app.",
+    "iconName": "Database",
+    "color": "bg-[#3B82F6]",
+    "slug": "ai-app-architecture",
+    "category": "Development",
+    "isPremium": false,
+    "createdAt": "2026-07-19T18:20:54.033Z"
+  },
+  {
+    "name": "AI Grant Proposal Writer",
+    "description": "Write professional grant proposals for non-profits and startups.",
+    "iconName": "FileText",
+    "color": "bg-[#14B8A6]",
+    "slug": "ai-grant-proposal",
+    "category": "Writing",
+    "isPremium": false,
+    "createdAt": "2026-07-19T18:20:54.033Z"
+  },
+  {
+    "name": "AI Legal Template Drafter",
+    "description": "Generate standard boilerplate templates for NDAs, Freelance agreements, etc.",
+    "iconName": "Scale",
+    "color": "bg-[#64748B]",
+    "slug": "ai-legal-template",
+    "category": "Business",
+    "isPremium": false,
+    "createdAt": "2026-07-19T18:20:54.033Z"
+  },
+  {
+    "name": "AI Social Media Calendar",
+    "description": "Generate a 30-day multi-channel marketing calendar with specific daily posts.",
+    "iconName": "CalendarDays",
+    "color": "bg-[#EC4899]",
+    "slug": "ai-social-calendar",
+    "category": "Marketing",
+    "isPremium": false,
+    "createdAt": "2026-07-19T18:20:54.033Z"
+  },
+  {
+    "title": "AI Marketing Plan Generator",
+    "slug": "ai-marketing-plan",
+    "category": "Marketing",
+    "isPremium": true
+  },
+  {
+    "title": "AI Startup Idea Generator",
+    "slug": "ai-startup-ideas",
+    "category": "Business",
+    "isPremium": true
+  },
+  {
+    "title": "AI SWOT Analysis Generator",
+    "slug": "ai-swot-analysis",
+    "category": "Business",
+    "isPremium": true
+  },
+  {
+    "title": "AI Investor Update Generator",
+    "slug": "ai-investor-update",
+    "category": "Business",
+    "isPremium": true
+  },
+  {
+    "title": "AI Press Release Writer",
+    "slug": "ai-press-release",
+    "category": "Marketing",
+    "isPremium": true
+  },
+  {
+    "title": "AI OKR Generator",
+    "slug": "ai-okr-generator",
+    "category": "Business",
+    "isPremium": true
+  },
+  {
+    "title": "AI Employee Performance Review",
+    "slug": "ai-employee-review",
+    "category": "Business",
+    "isPremium": true
+  },
+  {
+    "title": "AI Brand Guidelines Generator",
+    "slug": "ai-brand-guidelines",
+    "category": "Design",
+    "isPremium": true
+  },
+  {
+    "title": "AI User Persona Creator",
+    "slug": "ai-user-persona",
+    "category": "Marketing",
+    "isPremium": true
+  },
+  {
+    "title": "AI Customer Journey Mapper",
+    "slug": "ai-customer-journey",
+    "category": "Marketing",
+    "isPremium": true
+  },
+  {
+    "title": "AI B2B Cold Email Sequence",
+    "slug": "ai-cold-email",
+    "category": "Sales",
+    "isPremium": true
+  },
+  {
+    "title": "AI Sales Cold Call Script",
+    "slug": "ai-sales-script",
+    "category": "Sales",
+    "isPremium": true
+  },
+  {
+    "title": "AI Sales Objection Handler",
+    "slug": "ai-objection-handling",
+    "category": "Sales",
+    "isPremium": true
+  },
+  {
+    "title": "AI Lead Magnet Idea Generator",
+    "slug": "ai-lead-magnet",
+    "category": "Marketing",
+    "isPremium": true
+  },
+  {
+    "title": "AI Webinar Script Generator",
+    "slug": "ai-webinar-script",
+    "category": "Marketing",
+    "isPremium": true
+  },
+  {
+    "title": "AI Masterclass Course Outline",
+    "slug": "ai-course-outline",
+    "category": "Education",
+    "isPremium": true
+  },
+  {
+    "title": "AI Podcast Episode Script",
+    "slug": "ai-podcast-script",
+    "category": "Media",
+    "isPremium": true
+  },
+  {
+    "title": "AI Video Storyboard Generator",
+    "slug": "ai-video-storyboard",
+    "category": "Media",
+    "isPremium": true
+  },
+  {
+    "title": "AI Newsletter Content Generator",
+    "slug": "ai-newsletter-content",
+    "category": "Marketing",
+    "isPremium": true
+  },
+  {
+    "title": "AI Case Study Writer",
+    "slug": "ai-case-study",
+    "category": "Business",
+    "isPremium": true
+  },
+  {
+    "title": "AI Whitepaper Outline",
+    "slug": "ai-whitepaper-outline",
+    "category": "Business",
+    "isPremium": true
+  },
+  {
+    "title": "AI Landing Page Copywriter",
+    "slug": "ai-landing-page-copy",
+    "category": "Marketing",
+    "isPremium": true
+  },
+  {
+    "title": "AI Abandoned Cart Email Series",
+    "slug": "ai-abandoned-cart",
+    "category": "Marketing",
+    "isPremium": true
+  },
+  {
+    "title": "AI Product Launch Strategy",
+    "slug": "ai-product-launch",
+    "category": "Marketing",
+    "isPremium": true
+  },
+  {
+    "title": "AI Value Proposition Generator",
+    "slug": "ai-value-proposition",
+    "category": "Business",
+    "isPremium": true
+  },
+  {
+    "title": "AI Competitor Analysis",
+    "slug": "ai-competitor-analysis",
+    "category": "Business",
+    "isPremium": true
+  },
+  {
+    "title": "AI Pricing Strategy Generator",
+    "slug": "ai-pricing-strategy",
+    "category": "Business",
+    "isPremium": true
+  },
+  {
+    "title": "AI Business Model Canvas",
+    "slug": "ai-business-model",
+    "category": "Business",
+    "isPremium": true
+  },
+  {
+    "title": "AI Risk Assessment Report",
+    "slug": "ai-risk-assessment",
+    "category": "Business",
+    "isPremium": true
+  },
+  {
+    "title": "AI ESG / Sustainability Plan",
+    "slug": "ai-sustainability-plan",
+    "category": "Business",
+    "isPremium": true
+  },
+  {
+    "title": "AI Employee Onboarding Plan",
+    "slug": "ai-onboarding-plan",
+    "category": "HR",
+    "isPremium": true
+  },
+  {
+    "title": "AI Training Module Generator",
+    "slug": "ai-training-module",
+    "category": "HR",
+    "isPremium": true
+  },
+  {
+    "title": "AI Company Culture Guide",
+    "slug": "ai-company-culture",
+    "category": "HR",
+    "isPremium": true
+  },
+  {
+    "title": "AI Interview Scoring Rubric",
+    "slug": "ai-job-interview-rubric",
+    "category": "HR",
+    "isPremium": true
+  },
+  {
+    "title": "AI Crisis Management Plan",
+    "slug": "ai-crisis-management",
+    "category": "Business",
+    "isPremium": true
+  },
+  {
+    "title": "AI PR Media Pitch Generator",
+    "slug": "ai-pr-pitch",
+    "category": "Marketing",
+    "isPremium": true
+  },
+  {
+    "title": "AI Event Sponsorship Deck",
+    "slug": "ai-event-sponsorship",
+    "category": "Business",
+    "isPremium": true
+  },
+  {
+    "title": "AI Grant Progress Report",
+    "slug": "ai-grant-report",
+    "category": "Business",
+    "isPremium": true
+  },
+  {
+    "title": "AI Partnership Proposal",
+    "slug": "ai-partnership-proposal",
+    "category": "Business",
+    "isPremium": true
+  },
+  {
+    "title": "AI Franchise Operations Manual",
+    "slug": "ai-franchise-manual",
+    "category": "Business",
+    "isPremium": true
   }
 ]
