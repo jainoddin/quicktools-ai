@@ -33,5 +33,6 @@ while ((match = toolRegex.exec(arrayContent)) !== null) {
 }
 
 console.log('Total tools extracted:', tools.length);
-fs.writeFileSync('tools_data.json', JSON.stringify(tools, null, 2));
-console.log('tools_data.json updated!');
+fs.writeFileSync('frontend/tools_data.json', JSON.stringify(tools, null, 2));
+fs.writeFileSync('backend/tools_data.json', JSON.stringify(tools, null, 2));
+console.log('tools_data.json updated in frontend and backend!');
