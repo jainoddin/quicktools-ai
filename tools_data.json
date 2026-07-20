@@ -1,5 +1,15 @@
 [
   {
+    "name": "AI Text to Speech",
+    "description": "Convert any text into natural-sounding speech instantly using browser AI.",
+    "iconName": "Volume2",
+    "color": "bg-[#0EA5E9] text-white",
+    "slug": "ai-text-to-speech",
+    "category": "Utilities",
+    "isPremium": false,
+    "createdAt": "2026-07-20"
+  },
+  {
     "name": "AI Image Generator",
     "description": "Generate stunning images from text using advanced AI models.",
     "iconName": "ImageIcon",
