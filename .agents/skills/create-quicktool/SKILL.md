@@ -1,6 +1,6 @@
 ---
 name: Create QuickTool
-description: Generates a new QuickTool page, client component, API endpoint, and adds it to the configuration. Must follow exact design guidelines including History, PDF, Copy buttons, and SEO setup.
+description: Generates a new QuickTool page, client component, API endpoint, and adds it to the configuration. Must follow exact design guidelines including ToolHistorySidebar, TextDownloadModal, and Side-by-Side layout.
 ---
 
 # QuickTool Creation Guide
@@ -11,88 +11,56 @@ When the user asks to "create a new free tool", "create a quick tool", or "add a
 For every new tool, you must create/update:
 1. **Frontend Page**: `frontend/app/tools/[slug]/page.tsx`
 2. **Frontend Client**: `frontend/components/[slug]/[ToolName]Client.tsx`
-3. **API Endpoint**: Add a new prompt configuration to `backend/api/index.js` under the `prompts` object.
-4. **Tool Registry**: Add the tool's metadata to `tools_data.json` at the project root.
-5. **Icon Registry**: Map the tool's icon in `frontend/components/tools/ToolsClient.tsx` if it's not a standard Lucide React icon.
+3. **API Endpoint**: Add a new POST route in the backend (e.g., `backend/src/routes/tools.routes.ts`) and configure the prompt logic.
+4. **Tool Registry**: Add the tool's metadata to `allTools` list in `frontend/components/tools/ToolsClient.tsx`.
 
 ## 2. Frontend Page Guidelines (`page.tsx`)
 - Must use Next.js Metadata API for SEO (`export const metadata: Metadata = {...}`).
 - Must include `SoftwareApplication` JSON-LD Schema markup in a `<script>` tag.
-- Must include **Breadcrumbs** in the UI: `Home > All Tools > Tool Name` (using `lucide-react` icons `Home` and `ChevronRight`).
-- The main wrapper must have exactly: `<div className="flex-1 w-full max-w-[1600px] mx-auto px-4 md:px-6 lg:px-8 py-6 h-[calc(100vh-80px)]">`
+- The main wrapper must have exactly: `<div className="flex-1 w-full max-w-[1600px] mx-auto py-2 h-[calc(100vh-80px)]">` (Notice `py-2` and not `py-6`).
 
 ## 3. Frontend Client Guidelines (`[ToolName]Client.tsx`)
-- The main element MUST have a strict height constraint to prevent infinite expanding:
-  `<main className="flex-grow bg-white border border-[#E5E7EB] rounded-3xl p-6 lg:p-8 shadow-sm flex flex-col h-[600px] animate-in fade-in slide-in-from-bottom-4 duration-500 fill-mode-both delay-150">`
-- The inner markdown result container MUST have:
-  `<div className="flex-grow overflow-y-auto custom-scrollbar pr-2">` to enable scrolling when content overflows.
+You MUST use the **Side-by-Side Layout** pattern (similar to `AiSloganGeneratorClient.tsx`). Do NOT use a single full-width column layout.
 
-### Header & Buttons UI
-You MUST use this EXACT button structure and colors for the Result Header:
+### Layout Structure
+The root element must be:
 ```tsx
-<div className="flex gap-2">
-  {result && (
-    <>
-      {/* Copy Button (Blue) */}
-      <button
-        onClick={copyToClipboard}
-        className="flex items-center gap-2 px-4 py-2 bg-[#EFF6FF] text-[#2563EB] hover:bg-[#DBEAFE] font-bold rounded-xl transition-colors"
-      >
-        {copied ? <CheckCircle2 className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
-        <span className="hidden sm:inline">{copied ? 'Copied' : 'Copy'}</span>
-      </button>
-
-      {/* PDF Button (Green) */}
-      <button
-        onClick={() => downloadAsPDF(result, 'Your Tool Name')}
-        className="flex items-center gap-2 px-4 py-2 bg-[#F0FDF4] text-[#16A34A] hover:bg-[#DCFCE7] font-bold rounded-xl transition-colors"
-      >
-        <Download className="w-4 h-4" />
-        <span className="hidden sm:inline">PDF</span>
-      </button>
-    </>
-  )}
-  
-  {/* History Button (White/Gray) */}
-  <button
-    onClick={() => {
-      if (!isAuthenticated && toolHistory.length >= 3) {
-        setShowLoginPopup(true);
-      } else {
-        setShowHistory(true);
-      }
-    }}
-    className="flex items-center gap-2 px-4 py-2 bg-white hover:bg-[#F3F4F6] text-[#4B5563] font-bold rounded-xl transition-colors border border-[#E5E7EB]"
-  >
-    <History className="w-4 h-4" />
-    <span className="hidden sm:inline">History</span>
-  </button>
+<div className="flex flex-col lg:flex-row gap-8 h-full">
+  <LoginPopup isOpen={showLoginPopup} onClose={() => setShowLoginPopup(false)} />
+  {/* Left Sidebar (aside) */}
+  {/* Right Main Area (main) */}
+  <TextDownloadModal ... />
 </div>
 ```
 
-### Initial View Header
-When `!result && !isProcessing`, you must show the tool's colorful icon header at the top of the client component matching this layout:
-```tsx
-<div className="flex flex-col md:flex-row md:items-start lg:items-center justify-between gap-4 mb-6 ...">
-  <div className="flex items-center gap-3">
-    <div className="w-12 h-12 bg-[ICON_COLOR] rounded-xl flex items-center justify-center shadow-sm shrink-0">
-      <YourIcon className="w-6 h-6 text-white" />
-    </div>
-    <div>
-      <h1 className="text-2xl font-bold text-[#111827] flex items-center gap-2">
-        Tool Name <Sparkles className="w-5 h-5 text-[ICON_COLOR]" />
-      </h1>
-      <p className="text-sm text-[#6B7280]">Tool description.</p>
-    </div>
+### Left Sidebar (`aside`)
+- Must have: `<aside className="w-full lg:w-[340px] shrink-0 space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-500 fill-mode-both">`
+- Must contain the Input Textarea and the Generate Button.
+- **CRITICAL**: Must include the "Explore Other Free Tools" block at the bottom of the sidebar with interlinks to other tools (e.g. Business Name Generator, AI Ad Copy Generator).
+
+### Right Main Area (`main`)
+- Must have: `<main className="flex-grow flex flex-col min-w-0">`
+- If `showHistory` is true, render the sidebar component inside a card:
+  ```tsx
+  <div className="flex-grow bg-white border border-[#E5E7EB] rounded-3xl p-6 shadow-sm overflow-y-auto h-[600px] animate-in fade-in slide-in-from-bottom-4 duration-500 fill-mode-both">
+    <ToolHistorySidebar toolName="..." toolType="text" history={toolHistory} onBack={() => setShowHistory(false)} onToggleFavorite={...} onDelete={...} />
   </div>
-  {/* Add History button here as well for empty state */}
-</div>
-```
+  ```
+- If `showHistory` is false, render:
+  1. **Floating Header**: Title with Sparkles icon, description, and a floating History button on the right.
+  2. **Result Block**: 
+     - A container with strict height: `<div className="flex-grow bg-white border border-[#E5E7EB] rounded-3xl p-6 lg:p-8 shadow-sm flex flex-col h-[600px] ...">`
+     - When `isProcessing`, show `<TextGenerationProgress />`
+     - When `result`, show the Markdown content in an overflow-y-auto div, followed by a footer with `Download`, `Share`, `Regenerate`, and `Copy` buttons styled exactly like AiSloganGenerator.
+     - When empty, show a "Ready to generate" empty state.
+
+### Required Imports & Components
+- Use `ToolHistorySidebar` for rendering history (`import ToolHistorySidebar from '../tools/ToolHistorySidebar';`).
+- Use `TextDownloadModal` for PDF downloading instead of inline `html2pdf` logic (`import TextDownloadModal from '@/components/shared/TextDownloadModal';`).
+- Use `TextGenerationProgress` for loading states (`import TextGenerationProgress from '../shared/TextGenerationProgress';`).
 
 ## 4. Final Checklist
-- Backend endpoint added?
-- SEO/Schema added?
-- Breadcrumbs added?
-- Height constraint (`h-[600px]`) added?
-- Blue Copy and Green PDF buttons added?
-- Proper Icon imports from `lucide-react`?
+- Is the layout split into `<aside lg:w-[340px]>` and `<main>`?
+- Are the Explore Other Free Tools cards visible at the bottom of the left sidebar?
+- Is the Title & History button floating outside the main result card?
+- Did you use `ToolHistorySidebar` and `TextDownloadModal`?
