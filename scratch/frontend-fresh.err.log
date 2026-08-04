@@ -1,0 +1,1721 @@
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <RedirectErrorBoundary router={{...}}>
+      <Head>
+      <__next_root_layout_boundary__>
+        <SegmentViewNode type="layout" pagePath="layout.tsx">
+          <SegmentTrieNode>
+          <link>
+          <script>
+          <script>
+          <script>
+          <RootLayout>
+            <html lang="en" className="geist_a715...">
+              <body className="flex flex-...">
+                <Script>
+                <GoogleAnalytics>
+                <script>
+                <script>
+                <script>
+                <ToastProvider>
+                  <AuthProvider>
+                    <AnalyticsIdentity>
+                    <AnalyticsClickTracker>
+                    <SplashScreen>
+                    <Header>
+                      <nav className="sticky top...">
+                        <style>
+                        <div className="max-w-[144...">
+                          <LinkComponent>
+                          <div className="hidden lg:...">
+                            <LinkComponent>
+                            <LinkComponent>
+                            <div className="relative g...">
+                              <button
+                                className="flex items-center gap-1 hover:text-[#111827] transition-colors px-2 xl:px-3..."
+-                               fdprocessedid="zqvlgq"
+                              >
+                              ...
+                            ...
+                          ...
+                    ...
+                      <NewsClient initialNews={[...]} initialPagination={{total:32,page:1, ...}} ...>
+                        <div className="min-h-scre...">
+                          <style>
+                          <section className="bg-white b...">
+                            <div>
+                            <div>
+                            <div>
+                            <div className="max-w-[144...">
+                              <div className="max-w-2xl">
+                                <h1>
+                                <p>
+                                <div className="relative m...">
+                                  <div>
+                                  <input
+                                    type="text"
+                                    value=""
+                                    onChange={function onChange}
+                                    placeholder="Search news..."
+                                    className="w-full pl-12 pr-4 py-4 rounded-2xl border border-gray-200 focus:outline..."
+-                                   fdprocessedid="a4kbzm"
+                                  >
+                              ...
+                          <section className="max-w-[144...">
+                            <div className="mb-16">
+                              <div className="flex items...">
+                                <span>
+                                <div className="hidden md:...">
+                                  <button
+                                    className="w-8 h-8 rounded-full border border-gray-200 flex items-center justify-c..."
+-                                   fdprocessedid="algm6j"
+                                  >
+                                  <button
+                                    className="w-8 h-8 rounded-full border border-gray-200 flex items-center justify-c..."
+-                                   fdprocessedid="uks448"
+                                  >
+                              <div className="bg-white r...">
+                                <div className="w-full md:...">
+                                  <img>
+                                  <button
+                                    onClick={function onClick}
+                                    className="absolute top-3 right-3 z-20 w-8 h-8 backdrop-blur-md rounded-full flex ..."
+-                                   fdprocessedid="p7dw5"
+                                  >
+                                ...
+                            <div className="flex flex-...">
+                              <div className="flex-1" style={{...}}>
+                                <div className="flex flex-...">
+                                  <h2>
+                                  <div className="flex items...">
+                                    <span>
+                                    <div className="relative s...">
+                                      <button
+                                        onClick={function onClick}
+                                        className="flex items-center justify-between w-[120px] bg-white border border-..."
+-                                       fdprocessedid="ccvp3g"
+                                      >
+                                <div className="flex flex-...">
+                                  <button
+                                    onClick={function onClick}
+                                    className="px-4 py-2 rounded-full text-xs font-bold transition-all border bg-[#4F4..."
+-                                   fdprocessedid="8xdan1q"
+                                  >
++                                   All News
+                                  <button
+                                    onClick={function onClick}
+                                    className="px-4 py-2 rounded-full text-xs font-bold transition-all border bg-white..."
+-                                   fdprocessedid="6l8s65"
+                                  >
++                                   AI News
+                                  <button
+                                    onClick={function onClick}
+                                    className="px-4 py-2 rounded-full text-xs font-bold transition-all border bg-white..."
+-                                   fdprocessedid="gihcra"
+                                  >
++                                   Product Launches
+                                  <button
+                                    onClick={function onClick}
+                                    className="px-4 py-2 rounded-full text-xs font-bold transition-all border bg-white..."
+-                                   fdprocessedid="t99w4"
+                                  >
++                                   Research
+                                  <button
+                                    onClick={function onClick}
+                                    className="px-4 py-2 rounded-full text-xs font-bold transition-all border bg-white..."
+-                                   fdprocessedid="ajq71"
+                                  >
++                                   Funding
+                                  <button
+                                    onClick={function onClick}
+                                    className="px-4 py-2 rounded-full text-xs font-bold transition-all border bg-white..."
+-                                   fdprocessedid="2gx3ic"
+                                  >
++                                   Partnerships
+                                  <button
+                                    onClick={function onClick}
+                                    className="px-4 py-2 rounded-full text-xs font-bold transition-all border bg-white..."
+-                                   fdprocessedid="vy9rqf"
+                                  >
++                                   Industry
+                                  <button
+                                    onClick={function onClick}
+                                    className="px-4 py-2 rounded-full text-xs font-bold transition-all border bg-white..."
+-                                   fdprocessedid="ms5wba"
+                                  >
++                                   Regulation
+                                <div className="grid grid-...">
+                                  <LinkComponent href="/news/wsu-..." className="bg-white r...">
+                                    <a className="bg-white r..." ref={function} onClick={function onClick} ...>
+                                      <div className="aspect-[16...">
+                                        <img>
+                                        <div>
+                                        <button
+                                          onClick={function onClick}
+                                          className="absolute top-4 right-4 w-8 h-8 bg-white/90 backdrop-blur-sm round..."
+-                                         fdprocessedid="352qnk"
+                                        >
+                                      ...
+                                  <LinkComponent href="/news/ai-a..." className="bg-white r...">
+                                    <a className="bg-white r..." ref={function} onClick={function onClick} ...>
+                                      <div className="aspect-[16...">
+                                        <img>
+                                        <div>
+                                        <button
+                                          onClick={function onClick}
+                                          className="absolute top-4 right-4 w-8 h-8 bg-white/90 backdrop-blur-sm round..."
+-                                         fdprocessedid="6ajjse"
+                                        >
+                                      ...
+                                  <LinkComponent href="/news/ct-b..." className="bg-white r...">
+                                    <a className="bg-white r..." ref={function} onClick={function onClick} ...>
+                                      <div className="aspect-[16...">
+                                        <img>
+                                        <div>
+                                        <button
+                                          onClick={function onClick}
+                                          className="absolute top-4 right-4 w-8 h-8 bg-white/90 backdrop-blur-sm round..."
+-                                         fdprocessedid="cud03"
+                                        >
+                                      ...
+                                  <LinkComponent href="/news/bill..." className="bg-white r...">
+                                    <a className="bg-white r..." ref={function} onClick={function onClick} ...>
+                                      <div className="aspect-[16...">
+                                        <img>
+                                        <div>
+                                        <button
+                                          onClick={function onClick}
+                                          className="absolute top-4 right-4 w-8 h-8 bg-white/90 backdrop-blur-sm round..."
+-                                         fdprocessedid="0tpi9f"
+                                        >
+                                      ...
+                                  <LinkComponent href="/news/hist..." className="bg-white r...">
+                                    <a className="bg-white r..." ref={function} onClick={function onClick} ...>
+                                      <div className="aspect-[16...">
+                                        <img>
+                                        <div>
+                                        <button
+                                          onClick={function onClick}
+                                          className="absolute top-4 right-4 w-8 h-8 bg-white/90 backdrop-blur-sm round..."
+-                                         fdprocessedid="0vu3e"
+                                        >
+                                      ...
+                                  <LinkComponent href="/news/top-..." className="bg-white r...">
+                                    <a className="bg-white r..." ref={function} onClick={function onClick} ...>
+                                      <div className="aspect-[16...">
+                                        <img>
+                                        <div>
+                                        <button
+                                          onClick={function onClick}
+                                          className="absolute top-4 right-4 w-8 h-8 bg-white/90 backdrop-blur-sm round..."
+-                                         fdprocessedid="ciqjv9"
+                                        >
+                                      ...
+                                  <LinkComponent href="/news/ai-i..." className="bg-white r...">
+                                    <a className="bg-white r..." ref={function} onClick={function onClick} ...>
+                                      <div className="aspect-[16...">
+                                        <img>
+                                        <div>
+                                        <button
+                                          onClick={function onClick}
+                                          className="absolute top-4 right-4 w-8 h-8 bg-white/90 backdrop-blur-sm round..."
+-                                         fdprocessedid="sr2jx9"
+                                        >
+                                      ...
+                                  <LinkComponent href="/news/ai-m..." className="bg-white r...">
+                                    <a className="bg-white r..." ref={function} onClick={function onClick} ...>
+                                      <div className="aspect-[16...">
+                                        <img>
+                                        <div>
+                                        <button
+                                          onClick={function onClick}
+                                          className="absolute top-4 right-4 w-8 h-8 bg-white/90 backdrop-blur-sm round..."
+-                                         fdprocessedid="wv6dxp"
+                                        >
+                                      ...
+                                  <LinkComponent href="/news/forb..." className="bg-white r...">
+                                    <a className="bg-white r..." ref={function} onClick={function onClick} ...>
+                                      <div className="aspect-[16...">
+                                        <img>
+                                        <div>
+                                        <button
+                                          onClick={function onClick}
+                                          className="absolute top-4 right-4 w-8 h-8 bg-white/90 backdrop-blur-sm round..."
+-                                         fdprocessedid="fli65is"
+                                        >
+                                      ...
+                                  <LinkComponent href="/news/2001..." className="bg-white r...">
+                                    <a className="bg-white r..." ref={function} onClick={function onClick} ...>
+                                      <div className="aspect-[16...">
+                                        <img>
+                                        <div>
+                                        <button
+                                          onClick={function onClick}
+                                          className="absolute top-4 right-4 w-8 h-8 bg-white/90 backdrop-blur-sm round..."
+-                                         fdprocessedid="nw25b4"
+                                        >
+                                      ...
+                                  <LinkComponent href="/news/why-..." className="bg-white r...">
+                                    <a className="bg-white r..." ref={function} onClick={function onClick} ...>
+                                      <div className="aspect-[16...">
+                                        <img>
+                                        <div>
+                                        <button
+                                          onClick={function onClick}
+                                          className="absolute top-4 right-4 w-8 h-8 bg-white/90 backdrop-blur-sm round..."
+-                                         fdprocessedid="1znz7o"
+                                        >
+                                      ...
+                                ...
+                              <aside className="w-full lg:...">
+                                <NewsletterSectionWrapper>
+                                <div className="bg-white r...">
+                                  <h3>
+                                  <ul className="space-y-3">
+                                    <li>
+                                      <button
+                                        onClick={function onClick}
+                                        className="w-full flex items-center justify-between text-sm text-[#4B5563] hov..."
+-                                       fdprocessedid="kwko1"
+                                      >
+                                    <li>
+                                      <button
+                                        onClick={function onClick}
+                                        className="w-full flex items-center justify-between text-sm text-[#4B5563] hov..."
+-                                       fdprocessedid="96uit"
+                                      >
+                                    <li>
+                                      <button
+                                        onClick={function onClick}
+                                        className="w-full flex items-center justify-between text-sm text-[#4B5563] hov..."
+-                                       fdprocessedid="0nax03"
+                                      >
+                                    <li>
+                                      <button
+                                        onClick={function onClick}
+                                        className="w-full flex items-center justify-between text-sm text-[#4B5563] hov..."
+-                                       fdprocessedid="39wx37"
+                                      >
+                                    <li>
+                                      <button
+                                        onClick={function onClick}
+                                        className="w-full flex items-center justify-between text-sm text-[#4B5563] hov..."
+-                                       fdprocessedid="svd3n7"
+                                      >
+                                    <li>
+                                      <button
+                                        onClick={function onClick}
+                                        className="w-full flex items-center justify-between text-sm text-[#4B5563] hov..."
+-                                       fdprocessedid="z18m9"
+                                      >
+                                    <li>
+                                      <button
+                                        onClick={function onClick}
+                                        className="w-full flex items-center justify-between text-sm text-[#4B5563] hov..."
+-                                       fdprocessedid="mm24m"
+                                      >
+                                    <li>
+                                      <button
+                                        onClick={function onClick}
+                                        className="w-full flex items-center justify-between text-sm text-[#4B5563] hov..."
+-                                       fdprocessedid="q5tmcq"
+                                      >
+                                <div className="bg-white r...">
+                                  <h3>
+                                  <div className="space-y-5">
+                                    <LinkComponent href="/news/why-..." className="flex gap-4...">
+                                      <a className="flex gap-4..." ref={function} onClick={function onClick} ...>
+                                        <div>
+                                        <div>
+                                        <button
+                                          onClick={function onClick}
+                                          className="transition-colors p-1 text-gray-400 hover:text-[#4F46E5]"
+-                                         fdprocessedid="zllwp"
+                                        >
+                                    <LinkComponent href="/news/2001..." className="flex gap-4...">
+                                      <a className="flex gap-4..." ref={function} onClick={function onClick} ...>
+                                        <div>
+                                        <div>
+                                        <button
+                                          onClick={function onClick}
+                                          className="transition-colors p-1 text-gray-400 hover:text-[#4F46E5]"
+-                                         fdprocessedid="2l9ics"
+                                        >
+                                    <LinkComponent href="/news/forb..." className="flex gap-4...">
+                                      <a className="flex gap-4..." ref={function} onClick={function onClick} ...>
+                                        <div>
+                                        <div>
+                                        <button
+                                          onClick={function onClick}
+                                          className="transition-colors p-1 text-gray-400 hover:text-[#4F46E5]"
+-                                         fdprocessedid="x7xq2h"
+                                        >
+                                    <LinkComponent href="/news/ai-m..." className="flex gap-4...">
+                                      <a className="flex gap-4..." ref={function} onClick={function onClick} ...>
+                                        <div>
+                                        <div>
+                                        <button
+                                          onClick={function onClick}
+                                          className="transition-colors p-1 text-gray-400 hover:text-[#4F46E5]"
+-                                         fdprocessedid="lfl3xd"
+                                        >
+                    <Footer>
+                      <footer className="bg-white b...">
+                        <div className="max-w-[144...">
+                          <div className="grid grid-...">
+                            <div className="col-span-2...">
+                              <div>
+                              <p>
+                              <div className="flex items...">
+                                <LinkComponent>
+                                <button
+                                  onClick={function handleShare}
+                                  aria-label="Share"
+                                  className="focus:outline-none"
+-                                 fdprocessedid="ddx8e"
+                                >
+                                ...
+                            <div>
+                            <div>
+                            <div>
+                            <div className="col-span-2...">
+                              <h4>
+                              <p>
+                              <NewsletterForm className="flex flex-..." inputClassName="w-full px-..." inputStyle={{...}} ...>
+                                <form onSubmit={function handleSubmit} className="flex flex-...">
+                                  <input
+                                    type="email"
+                                    name="email"
+                                    required={true}
+                                    placeholder="Enter your email"
+                                    className="w-full px-4 py-2.5 rounded-lg border border-[#E5E7EB] text-[#111827] pl..."
+                                    style={{--tw-ring-color:"#4F46E5",borderColor:"#4F46E5"}}
+                                    disabled={false}
+-                                   fdprocessedid="ieebvk"
+                                  >
+                                  <button
+                                    type="submit"
+                                    className="text-white font-semibold py-2.5 rounded-lg text-sm shadow-sm w-full"
+                                    style={{backgroundColor:"#4F46E5"}}
+                                    disabled={false}
+-                                   fdprocessedid="zux69"
+                                  >
++                                   Subscribe
+                    ...
+                  ...
+      ...
+ 
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/91999519-de24-44de-8f76-cbbb8d0d5727.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/news_covers/bb56be59005079097b1b85f34368016a.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <RedirectErrorBoundary router={{...}}>
+      <Head>
+      <__next_root_layout_boundary__>
+        <SegmentViewNode type="layout" pagePath="layout.tsx">
+          <SegmentTrieNode>
+          <link>
+          <script>
+          <script>
+          <script>
+          <RootLayout>
+            <html lang="en" className="geist_a715...">
+              <body className="flex flex-...">
+                <Script>
+                <GoogleAnalytics>
+                <script>
+                <script>
+                <script>
+                <ToastProvider>
+                  <AuthProvider>
+                    <AnalyticsIdentity>
+                    <AnalyticsClickTracker>
+                    <SplashScreen>
+                    <Header>
+                      <nav className="sticky top...">
+                        <style>
+                        <div className="max-w-[144...">
+                          <LinkComponent>
+                          <div className="hidden lg:...">
+                            <LinkComponent>
+                            <LinkComponent>
+                            <div className="relative g...">
+                              <button
+                                className="flex items-center gap-1 hover:text-[#111827] transition-colors px-2 xl:px-3..."
+-                               fdprocessedid="tu40mh"
+                              >
+                              ...
+                            ...
+                          ...
+                    ...
+                      <NewsClient initialNews={[...]} initialPagination={{total:32,page:1, ...}} ...>
+                        <div className="min-h-scre...">
+                          <style>
+                          <section className="bg-white b...">
+                            <div>
+                            <div>
+                            <div>
+                            <div className="max-w-[144...">
+                              <div className="max-w-2xl">
+                                <h1>
+                                <p>
+                                <div className="relative m...">
+                                  <div>
+                                  <input
+                                    type="text"
+                                    value=""
+                                    onChange={function onChange}
+                                    placeholder="Search news..."
+                                    className="w-full pl-12 pr-4 py-4 rounded-2xl border border-gray-200 focus:outline..."
+-                                   fdprocessedid="3xylf9"
+                                  >
+                              ...
+                          <section className="max-w-[144...">
+                            <div className="mb-16">
+                              <div className="flex items...">
+                                <span>
+                                <div className="hidden md:...">
+                                  <button
+                                    className="w-8 h-8 rounded-full border border-gray-200 flex items-center justify-c..."
+-                                   fdprocessedid="no4was"
+                                  >
+                                  <button
+                                    className="w-8 h-8 rounded-full border border-gray-200 flex items-center justify-c..."
+-                                   fdprocessedid="s94hb9"
+                                  >
+                              <div className="bg-white r...">
+                                <div className="w-full md:...">
+                                  <img>
+                                  <button
+                                    onClick={function onClick}
+                                    className="absolute top-3 right-3 z-20 w-8 h-8 backdrop-blur-md rounded-full flex ..."
+-                                   fdprocessedid="x3ui1"
+                                  >
+                                ...
+                            <div className="flex flex-...">
+                              <div className="flex-1" style={{...}}>
+                                <div className="flex flex-...">
+                                  <h2>
+                                  <div className="flex items...">
+                                    <span>
+                                    <div className="relative s...">
+                                      <button
+                                        onClick={function onClick}
+                                        className="flex items-center justify-between w-[120px] bg-white border border-..."
+-                                       fdprocessedid="e7khvj"
+                                      >
+                                <div className="flex flex-...">
+                                  <button
+                                    onClick={function onClick}
+                                    className="px-4 py-2 rounded-full text-xs font-bold transition-all border bg-[#4F4..."
+-                                   fdprocessedid="3zmdq"
+                                  >
++                                   All News
+                                  <button
+                                    onClick={function onClick}
+                                    className="px-4 py-2 rounded-full text-xs font-bold transition-all border bg-white..."
+-                                   fdprocessedid="s67q7"
+                                  >
++                                   AI News
+                                  <button
+                                    onClick={function onClick}
+                                    className="px-4 py-2 rounded-full text-xs font-bold transition-all border bg-white..."
+-                                   fdprocessedid="xhuxqd"
+                                  >
++                                   Product Launches
+                                  <button
+                                    onClick={function onClick}
+                                    className="px-4 py-2 rounded-full text-xs font-bold transition-all border bg-white..."
+-                                   fdprocessedid="898aaa"
+                                  >
++                                   Research
+                                  <button
+                                    onClick={function onClick}
+                                    className="px-4 py-2 rounded-full text-xs font-bold transition-all border bg-white..."
+-                                   fdprocessedid="bhot7e"
+                                  >
++                                   Funding
+                                  <button
+                                    onClick={function onClick}
+                                    className="px-4 py-2 rounded-full text-xs font-bold transition-all border bg-white..."
+-                                   fdprocessedid="8fvibb"
+                                  >
++                                   Partnerships
+                                  <button
+                                    onClick={function onClick}
+                                    className="px-4 py-2 rounded-full text-xs font-bold transition-all border bg-white..."
+-                                   fdprocessedid="kqwte"
+                                  >
++                                   Industry
+                                  <button
+                                    onClick={function onClick}
+                                    className="px-4 py-2 rounded-full text-xs font-bold transition-all border bg-white..."
+-                                   fdprocessedid="cq1c6"
+                                  >
++                                   Regulation
+                                <div className="grid grid-...">
+                                  <LinkComponent href="/news/wsu-..." className="bg-white r...">
+                                    <a className="bg-white r..." ref={function} onClick={function onClick} ...>
+                                      <div className="aspect-[16...">
+                                        <img>
+                                        <div>
+                                        <button
+                                          onClick={function onClick}
+                                          className="absolute top-4 right-4 w-8 h-8 bg-white/90 backdrop-blur-sm round..."
+-                                         fdprocessedid="m403yi"
+                                        >
+                                      ...
+                                  <LinkComponent href="/news/ai-a..." className="bg-white r...">
+                                    <a className="bg-white r..." ref={function} onClick={function onClick} ...>
+                                      <div className="aspect-[16...">
+                                        <img>
+                                        <div>
+                                        <button
+                                          onClick={function onClick}
+                                          className="absolute top-4 right-4 w-8 h-8 bg-white/90 backdrop-blur-sm round..."
+-                                         fdprocessedid="i1cif"
+                                        >
+                                      ...
+                                  <LinkComponent href="/news/ct-b..." className="bg-white r...">
+                                    <a className="bg-white r..." ref={function} onClick={function onClick} ...>
+                                      <div className="aspect-[16...">
+                                        <img>
+                                        <div>
+                                        <button
+                                          onClick={function onClick}
+                                          className="absolute top-4 right-4 w-8 h-8 bg-white/90 backdrop-blur-sm round..."
+-                                         fdprocessedid="f5b7p"
+                                        >
+                                      ...
+                                  <LinkComponent href="/news/bill..." className="bg-white r...">
+                                    <a className="bg-white r..." ref={function} onClick={function onClick} ...>
+                                      <div className="aspect-[16...">
+                                        <img>
+                                        <div>
+                                        <button
+                                          onClick={function onClick}
+                                          className="absolute top-4 right-4 w-8 h-8 bg-white/90 backdrop-blur-sm round..."
+-                                         fdprocessedid="dqtx3"
+                                        >
+                                      ...
+                                  <LinkComponent href="/news/hist..." className="bg-white r...">
+                                    <a className="bg-white r..." ref={function} onClick={function onClick} ...>
+                                      <div className="aspect-[16...">
+                                        <img>
+                                        <div>
+                                        <button
+                                          onClick={function onClick}
+                                          className="absolute top-4 right-4 w-8 h-8 bg-white/90 backdrop-blur-sm round..."
+-                                         fdprocessedid="cb7hmk"
+                                        >
+                                      ...
+                                  <LinkComponent href="/news/top-..." className="bg-white r...">
+                                    <a className="bg-white r..." ref={function} onClick={function onClick} ...>
+                                      <div className="aspect-[16...">
+                                        <img>
+                                        <div>
+                                        <button
+                                          onClick={function onClick}
+                                          className="absolute top-4 right-4 w-8 h-8 bg-white/90 backdrop-blur-sm round..."
+-                                         fdprocessedid="jo6b28"
+                                        >
+                                      ...
+                                  <LinkComponent href="/news/ai-i..." className="bg-white r...">
+                                    <a className="bg-white r..." ref={function} onClick={function onClick} ...>
+                                      <div className="aspect-[16...">
+                                        <img>
+                                        <div>
+                                        <button
+                                          onClick={function onClick}
+                                          className="absolute top-4 right-4 w-8 h-8 bg-white/90 backdrop-blur-sm round..."
+-                                         fdprocessedid="bcdcx9"
+                                        >
+                                      ...
+                                  <LinkComponent href="/news/ai-m..." className="bg-white r...">
+                                    <a className="bg-white r..." ref={function} onClick={function onClick} ...>
+                                      <div className="aspect-[16...">
+                                        <img>
+                                        <div>
+                                        <button
+                                          onClick={function onClick}
+                                          className="absolute top-4 right-4 w-8 h-8 bg-white/90 backdrop-blur-sm round..."
+-                                         fdprocessedid="khilkp"
+                                        >
+                                      ...
+                                  <LinkComponent href="/news/forb..." className="bg-white r...">
+                                    <a className="bg-white r..." ref={function} onClick={function onClick} ...>
+                                      <div className="aspect-[16...">
+                                        <img>
+                                        <div>
+                                        <button
+                                          onClick={function onClick}
+                                          className="absolute top-4 right-4 w-8 h-8 bg-white/90 backdrop-blur-sm round..."
+-                                         fdprocessedid="uenevp"
+                                        >
+                                      ...
+                                  <LinkComponent href="/news/2001..." className="bg-white r...">
+                                    <a className="bg-white r..." ref={function} onClick={function onClick} ...>
+                                      <div className="aspect-[16...">
+                                        <img>
+                                        <div>
+                                        <button
+                                          onClick={function onClick}
+                                          className="absolute top-4 right-4 w-8 h-8 bg-white/90 backdrop-blur-sm round..."
+-                                         fdprocessedid="2dxdmi"
+                                        >
+                                      ...
+                                  <LinkComponent href="/news/why-..." className="bg-white r...">
+                                    <a className="bg-white r..." ref={function} onClick={function onClick} ...>
+                                      <div className="aspect-[16...">
+                                        <img>
+                                        <div>
+                                        <button
+                                          onClick={function onClick}
+                                          className="absolute top-4 right-4 w-8 h-8 bg-white/90 backdrop-blur-sm round..."
+-                                         fdprocessedid="w6d9s"
+                                        >
+                                      ...
+                                ...
+                              <aside className="w-full lg:...">
+                                <NewsletterSectionWrapper>
+                                <div className="bg-white r...">
+                                  <h3>
+                                  <ul className="space-y-3">
+                                    <li>
+                                      <button
+                                        onClick={function onClick}
+                                        className="w-full flex items-center justify-between text-sm text-[#4B5563] hov..."
+-                                       fdprocessedid="pu0638"
+                                      >
+                                    <li>
+                                      <button
+                                        onClick={function onClick}
+                                        className="w-full flex items-center justify-between text-sm text-[#4B5563] hov..."
+-                                       fdprocessedid="676sh"
+                                      >
+                                    <li>
+                                      <button
+                                        onClick={function onClick}
+                                        className="w-full flex items-center justify-between text-sm text-[#4B5563] hov..."
+-                                       fdprocessedid="hkkvxq"
+                                      >
+                                    <li>
+                                      <button
+                                        onClick={function onClick}
+                                        className="w-full flex items-center justify-between text-sm text-[#4B5563] hov..."
+-                                       fdprocessedid="rst39"
+                                      >
+                                    <li>
+                                      <button
+                                        onClick={function onClick}
+                                        className="w-full flex items-center justify-between text-sm text-[#4B5563] hov..."
+-                                       fdprocessedid="8j0sbd"
+                                      >
+                                    <li>
+                                      <button
+                                        onClick={function onClick}
+                                        className="w-full flex items-center justify-between text-sm text-[#4B5563] hov..."
+-                                       fdprocessedid="sbmwkm"
+                                      >
+                                    <li>
+                                      <button
+                                        onClick={function onClick}
+                                        className="w-full flex items-center justify-between text-sm text-[#4B5563] hov..."
+-                                       fdprocessedid="rondn8"
+                                      >
+                                    <li>
+                                      <button
+                                        onClick={function onClick}
+                                        className="w-full flex items-center justify-between text-sm text-[#4B5563] hov..."
+-                                       fdprocessedid="qs14x1"
+                                      >
+                                <div className="bg-white r...">
+                                  <h3>
+                                  <div className="space-y-5">
+                                    <LinkComponent href="/news/why-..." className="flex gap-4...">
+                                      <a className="flex gap-4..." ref={function} onClick={function onClick} ...>
+                                        <div>
+                                        <div>
+                                        <button
+                                          onClick={function onClick}
+                                          className="transition-colors p-1 text-gray-400 hover:text-[#4F46E5]"
+-                                         fdprocessedid="l84dh6"
+                                        >
+                                    <LinkComponent href="/news/2001..." className="flex gap-4...">
+                                      <a className="flex gap-4..." ref={function} onClick={function onClick} ...>
+                                        <div>
+                                        <div>
+                                        <button
+                                          onClick={function onClick}
+                                          className="transition-colors p-1 text-gray-400 hover:text-[#4F46E5]"
+-                                         fdprocessedid="bej43b"
+                                        >
+                                    <LinkComponent href="/news/forb..." className="flex gap-4...">
+                                      <a className="flex gap-4..." ref={function} onClick={function onClick} ...>
+                                        <div>
+                                        <div>
+                                        <button
+                                          onClick={function onClick}
+                                          className="transition-colors p-1 text-gray-400 hover:text-[#4F46E5]"
+-                                         fdprocessedid="j8fpip"
+                                        >
+                                    <LinkComponent href="/news/ai-m..." className="flex gap-4...">
+                                      <a className="flex gap-4..." ref={function} onClick={function onClick} ...>
+                                        <div>
+                                        <div>
+                                        <button
+                                          onClick={function onClick}
+                                          className="transition-colors p-1 text-gray-400 hover:text-[#4F46E5]"
+-                                         fdprocessedid="cwpum"
+                                        >
+                    <Footer>
+                      <footer className="bg-white b...">
+                        <div className="max-w-[144...">
+                          <div className="grid grid-...">
+                            <div className="col-span-2...">
+                              <div>
+                              <p>
+                              <div className="flex items...">
+                                <LinkComponent>
+                                <button
+                                  onClick={function handleShare}
+                                  aria-label="Share"
+                                  className="focus:outline-none"
+-                                 fdprocessedid="zezun"
+                                >
+                                ...
+                            <div>
+                            <div>
+                            <div>
+                            <div className="col-span-2...">
+                              <h4>
+                              <p>
+                              <NewsletterForm className="flex flex-..." inputClassName="w-full px-..." inputStyle={{...}} ...>
+                                <form onSubmit={function handleSubmit} className="flex flex-...">
+                                  <input
+                                    type="email"
+                                    name="email"
+                                    required={true}
+                                    placeholder="Enter your email"
+                                    className="w-full px-4 py-2.5 rounded-lg border border-[#E5E7EB] text-[#111827] pl..."
+                                    style={{--tw-ring-color:"#4F46E5",borderColor:"#4F46E5"}}
+                                    disabled={false}
+-                                   fdprocessedid="bzsw4h"
+                                  >
+                                  <button
+                                    type="submit"
+                                    className="text-white font-semibold py-2.5 rounded-lg text-sm shadow-sm w-full"
+                                    style={{backgroundColor:"#4F46E5"}}
+                                    disabled={false}
+-                                   fdprocessedid="art63c"
+                                  >
++                                   Subscribe
+                    ...
+                  ...
+      ...
+ 
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/91999519-de24-44de-8f76-cbbb8d0d5727.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <__next_root_layout_boundary__>
+      <SegmentViewNode type="layout" pagePath="layout.tsx">
+        <SegmentTrieNode>
+        <link>
+        <script>
+        <script>
+        <script>
+        <RootLayout>
+          <html lang="en" className="geist_a715...">
+            <body className="flex flex-...">
+              <Script>
+              <GoogleAnalytics>
+              <script>
+              <script>
+              <script>
+              <ToastProvider>
+                <AuthProvider>
+                  <AnalyticsIdentity>
+                  <AnalyticsClickTracker>
+                  <SplashScreen>
+                  <Header>
+                  <main>
+                  <Footer>
+                    <footer className="bg-white b...">
+                      <div className="max-w-[144...">
+                        <div className="grid grid-...">
+                          <div className="col-span-2...">
+                            <div>
+                            <p>
+                            <div className="flex items...">
+                              <LinkComponent>
+                              <button
+                                onClick={function handleShare}
+                                aria-label="Share"
+                                className="focus:outline-none"
+-                               fdprocessedid="3zapkp"
+                              >
+                              ...
+                          <div>
+                          <div>
+                          <div>
+                          <div className="col-span-2...">
+                            <h4>
+                            <p>
+                            <NewsletterForm className="flex flex-..." inputClassName="w-full px-..." inputStyle={{...}} ...>
+                              <form onSubmit={function handleSubmit} className="flex flex-...">
+                                <input
+                                  type="email"
+                                  name="email"
+                                  required={true}
+                                  placeholder="Enter your email"
+                                  className="w-full px-4 py-2.5 rounded-lg border border-[#E5E7EB] text-[#111827] plac..."
+                                  style={{--tw-ring-color:"#4F46E5",borderColor:"#4F46E5"}}
+                                  disabled={false}
+-                                 fdprocessedid="7ztic"
+                                >
+                                <button
+                                  type="submit"
+                                  className="text-white font-semibold py-2.5 rounded-lg text-sm shadow-sm w-full"
+                                  style={{backgroundColor:"#4F46E5"}}
+                                  disabled={false}
+-                                 fdprocessedid="xoddd5"
+                                >
++                                 Subscribe
+                  ...
+                ...
+ 
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <RedirectErrorBoundary router={{...}}>
+      <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:{...}, ...}} segmentPath={[...]} ...>
+        <SegmentViewNode type="page" pagePath="page.tsx">
+          <SegmentTrieNode>
+          <HomePage>
+            <div className="flex-grow ...">
+              <script>
+              <header className="relative w...">
+                <div>
+                <div>
+                <div>
+                <div className="max-w-[144...">
+                  <div className="grid lg:gr...">
+                    <div className="max-w-2xl ...">
+                      <div>
+                      <h1>
+                      <p>
+                      <div>
+                      <div className="mt-7 max-w-xl">
+                        <Suspense fallback={{...}}>
+                          <HomeSearch>
+                            <form onSubmit={function handleSearch} className="relative f...">
+                              <input
+                                type="text"
+                                value=""
+                                onChange={function onChange}
+                                placeholder="Search tools (e.g., image generator, background remover...)"
+                                className="w-full pl-5 pr-14 py-4 rounded-xl border border-[#E5E7EB] shadow-sm focus:r..."
+-                               fdprocessedid="9j0g9"
+                              >
+                              <button
+                                type="submit"
+                                className="absolute right-2 p-2.5 bg-[#4F46E5] hover:bg-[#4338CA] text-white rounded-l..."
+-                               fdprocessedid="4dty6"
+                              >
+                      ...
+                    ...
+              ...
+        ...
+      ...
+ 
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <RedirectErrorBoundary router={{...}}>
+      <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:{...}, ...}} segmentPath={[...]} ...>
+        <SegmentViewNode type="page" pagePath="page.tsx">
+          <SegmentTrieNode>
+          <HomePage>
+            <div className="flex-grow ...">
+              <script>
+              <header className="relative w...">
+                <div>
+                <div>
+                <div>
+                <div className="max-w-[144...">
+                  <div className="grid lg:gr...">
+                    <div className="max-w-2xl ...">
+                      <div>
+                      <h1>
+                      <p>
+                      <div>
+                      <div className="mt-7 max-w-xl">
+                        <Suspense fallback={{...}}>
+                          <HomeSearch>
+                            <form onSubmit={function handleSearch} className="relative f...">
+                              <input
+                                type="text"
+                                value=""
+                                onChange={function onChange}
+                                placeholder="Search tools (e.g., image generator, background remover...)"
+                                className="w-full pl-5 pr-14 py-4 rounded-xl border border-[#E5E7EB] shadow-sm focus:r..."
+-                               fdprocessedid="9j0g9"
+                              >
+                              <button
+                                type="submit"
+                                className="absolute right-2 p-2.5 bg-[#4F46E5] hover:bg-[#4338CA] text-white rounded-l..."
+-                               fdprocessedid="4dty6"
+                              >
+                      ...
+                    ...
+              ...
+        ...
+      ...
+ 
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/6f5cf36e-5954-44f9-b356-2be5e15356a1.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+⨯ upstream image response timed out for https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/6f5cf36e-5954-44f9-b356-2be5e15356a1.png
+Error: "url" parameter is valid but upstream response timed out
+    at ignore-listed frames {
+  statusCode: 504
+}
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/c3effb5c483f11968a6d4c8f230a705b.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/5bd6c73e1aeac89b67e23aae946992dc.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/0970af67df059ed5935d9bef50e9b19e.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/12e96b39d58baedb63affbe19a9b62d1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/8b8364e3d8920dbe6b2e1bdb55db8420.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/c731f3651f1c579a76a99ad5b7baa522.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/888f1666bf1c7210c7a6c72ff73195fc.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/082ff01b10d12116b8b6b7e2b62a2dbf.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/402a661a6a58205ac6aaa8982a32810f.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/ad9d1b2fd3cd97497da109e5e8d65ced.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/94e5a48635ce96762464e341c1f23999.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/a00d1a7b2b4f89c86853fa72892fab25.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/91999519-de24-44de-8f76-cbbb8d0d5727.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/e3f4b268-d502-44fc-a58d-6af941e6639b.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/888f1666bf1c7210c7a6c72ff73195fc.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/c731f3651f1c579a76a99ad5b7baa522.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/12e96b39d58baedb63affbe19a9b62d1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/8b8364e3d8920dbe6b2e1bdb55db8420.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/402a661a6a58205ac6aaa8982a32810f.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/ad9d1b2fd3cd97497da109e5e8d65ced.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/94e5a48635ce96762464e341c1f23999.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/c3effb5c483f11968a6d4c8f230a705b.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/0970af67df059ed5935d9bef50e9b19e.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/5bd6c73e1aeac89b67e23aae946992dc.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/082ff01b10d12116b8b6b7e2b62a2dbf.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/a00d1a7b2b4f89c86853fa72892fab25.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/6f5cf36e-5954-44f9-b356-2be5e15356a1.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/888f1666bf1c7210c7a6c72ff73195fc.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/c731f3651f1c579a76a99ad5b7baa522.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/12e96b39d58baedb63affbe19a9b62d1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/8b8364e3d8920dbe6b2e1bdb55db8420.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/402a661a6a58205ac6aaa8982a32810f.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/ad9d1b2fd3cd97497da109e5e8d65ced.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/0970af67df059ed5935d9bef50e9b19e.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/5bd6c73e1aeac89b67e23aae946992dc.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/082ff01b10d12116b8b6b7e2b62a2dbf.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/a00d1a7b2b4f89c86853fa72892fab25.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/2a4164aacd907666bdf1e89f9972a8be.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/2a4164aacd907666bdf1e89f9972a8be.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/94e5a48635ce96762464e341c1f23999.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/6f5cf36e-5954-44f9-b356-2be5e15356a1.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/91999519-de24-44de-8f76-cbbb8d0d5727.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/91999519-de24-44de-8f76-cbbb8d0d5727.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/2a4164aacd907666bdf1e89f9972a8be.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/c731f3651f1c579a76a99ad5b7baa522.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/888f1666bf1c7210c7a6c72ff73195fc.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/a00d1a7b2b4f89c86853fa72892fab25.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/12e96b39d58baedb63affbe19a9b62d1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/0970af67df059ed5935d9bef50e9b19e.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/5bd6c73e1aeac89b67e23aae946992dc.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/082ff01b10d12116b8b6b7e2b62a2dbf.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/8b8364e3d8920dbe6b2e1bdb55db8420.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/402a661a6a58205ac6aaa8982a32810f.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/ad9d1b2fd3cd97497da109e5e8d65ced.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/94e5a48635ce96762464e341c1f23999.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/91999519-de24-44de-8f76-cbbb8d0d5727.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/news_covers/bb56be59005079097b1b85f34368016a.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/91999519-de24-44de-8f76-cbbb8d0d5727.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/91999519-de24-44de-8f76-cbbb8d0d5727.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/91999519-de24-44de-8f76-cbbb8d0d5727.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/91999519-de24-44de-8f76-cbbb8d0d5727.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/2a4164aacd907666bdf1e89f9972a8be.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/c731f3651f1c579a76a99ad5b7baa522.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/888f1666bf1c7210c7a6c72ff73195fc.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/12e96b39d58baedb63affbe19a9b62d1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/0970af67df059ed5935d9bef50e9b19e.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/5bd6c73e1aeac89b67e23aae946992dc.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/082ff01b10d12116b8b6b7e2b62a2dbf.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/a00d1a7b2b4f89c86853fa72892fab25.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/8b8364e3d8920dbe6b2e1bdb55db8420.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/402a661a6a58205ac6aaa8982a32810f.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/ad9d1b2fd3cd97497da109e5e8d65ced.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/94e5a48635ce96762464e341c1f23999.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/6f5cf36e-5954-44f9-b356-2be5e15356a1.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/91999519-de24-44de-8f76-cbbb8d0d5727.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/91999519-de24-44de-8f76-cbbb8d0d5727.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/2a4164aacd907666bdf1e89f9972a8be.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/888f1666bf1c7210c7a6c72ff73195fc.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/c731f3651f1c579a76a99ad5b7baa522.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/12e96b39d58baedb63affbe19a9b62d1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/0970af67df059ed5935d9bef50e9b19e.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/a00d1a7b2b4f89c86853fa72892fab25.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/082ff01b10d12116b8b6b7e2b62a2dbf.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/5bd6c73e1aeac89b67e23aae946992dc.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/8b8364e3d8920dbe6b2e1bdb55db8420.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/ad9d1b2fd3cd97497da109e5e8d65ced.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/402a661a6a58205ac6aaa8982a32810f.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/94e5a48635ce96762464e341c1f23999.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/91999519-de24-44de-8f76-cbbb8d0d5727.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/888f1666bf1c7210c7a6c72ff73195fc.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/2a4164aacd907666bdf1e89f9972a8be.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/c731f3651f1c579a76a99ad5b7baa522.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/12e96b39d58baedb63affbe19a9b62d1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/8b8364e3d8920dbe6b2e1bdb55db8420.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/0970af67df059ed5935d9bef50e9b19e.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/5bd6c73e1aeac89b67e23aae946992dc.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/a00d1a7b2b4f89c86853fa72892fab25.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/082ff01b10d12116b8b6b7e2b62a2dbf.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/402a661a6a58205ac6aaa8982a32810f.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/ad9d1b2fd3cd97497da109e5e8d65ced.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/94e5a48635ce96762464e341c1f23999.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/6f5cf36e-5954-44f9-b356-2be5e15356a1.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/91999519-de24-44de-8f76-cbbb8d0d5727.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/91999519-de24-44de-8f76-cbbb8d0d5727.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/2a4164aacd907666bdf1e89f9972a8be.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/888f1666bf1c7210c7a6c72ff73195fc.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/5bd6c73e1aeac89b67e23aae946992dc.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/082ff01b10d12116b8b6b7e2b62a2dbf.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/0970af67df059ed5935d9bef50e9b19e.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/a00d1a7b2b4f89c86853fa72892fab25.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/c731f3651f1c579a76a99ad5b7baa522.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/12e96b39d58baedb63affbe19a9b62d1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/8b8364e3d8920dbe6b2e1bdb55db8420.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/402a661a6a58205ac6aaa8982a32810f.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/ad9d1b2fd3cd97497da109e5e8d65ced.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/94e5a48635ce96762464e341c1f23999.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/91999519-de24-44de-8f76-cbbb8d0d5727.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/91999519-de24-44de-8f76-cbbb8d0d5727.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/91999519-de24-44de-8f76-cbbb8d0d5727.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/91999519-de24-44de-8f76-cbbb8d0d5727.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/6f5cf36e-5954-44f9-b356-2be5e15356a1.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/6f5cf36e-5954-44f9-b356-2be5e15356a1.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+Failed to fetch articles: TypeError: fetch failed
+    at async getArticles (app\articles\page.tsx:18:17)
+    at async ArticlesDirectoryPage (app\articles\page.tsx:30:28)
+  16 | async function getArticles() {
+  17 |   try {
+> 18 |     const res = await fetch(getEndpoint('/api/articles?limit=12'), {
+     |                 ^
+  19 |       cache: 'no-store' // Always fetch fresh articles
+  20 |     });
+  21 |     if (!res.ok) return { data: [], pagination: {} }; {
+  [cause]: AggregateError: 
+      at ignore-listed frames {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+Failed to fetch articles: TypeError: fetch failed
+    at async getArticles (app\articles\page.tsx:18:17)
+    at async ArticlesDirectoryPage (app\articles\page.tsx:30:28)
+  16 | async function getArticles() {
+  17 |   try {
+> 18 |     const res = await fetch(getEndpoint('/api/articles?limit=12'), {
+     |                 ^
+  19 |       cache: 'no-store' // Always fetch fresh articles
+  20 |     });
+  21 |     if (!res.ok) return { data: [], pagination: {} }; {
+  [cause]: AggregateError: 
+      at ignore-listed frames {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/6f5cf36e-5954-44f9-b356-2be5e15356a1.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+Failed to proxy http://localhost:5000/api/auth/me AggregateError: 
+    at ignore-listed frames {
+  code: 'ECONNREFUSED',
+  [errors]: [
+    Error: connect ECONNREFUSED ::1:5000
+        at <unknown> (Error: connect ECONNREFUSED ::1:5000) {
+      errno: -4078,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '::1',
+      port: 5000
+    },
+    Error: connect ECONNREFUSED 127.0.0.1:5000
+        at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:5000) {
+      errno: -4078,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 5000
+    }
+  ]
+}
+AggregateError: 
+    at ignore-listed frames {
+  code: 'ECONNREFUSED',
+  [errors]: [
+    Error: connect ECONNREFUSED ::1:5000
+        at <unknown> (Error: connect ECONNREFUSED ::1:5000) {
+      errno: -4078,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '::1',
+      port: 5000
+    },
+    Error: connect ECONNREFUSED 127.0.0.1:5000
+        at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:5000) {
+      errno: -4078,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 5000
+    }
+  ]
+}
+Failed to fetch articles: TypeError: fetch failed
+    at async getArticles (app\articles\page.tsx:18:17)
+    at async ArticlesDirectoryPage (app\articles\page.tsx:30:28)
+  16 | async function getArticles() {
+  17 |   try {
+> 18 |     const res = await fetch(getEndpoint('/api/articles?limit=12'), {
+     |                 ^
+  19 |       cache: 'no-store' // Always fetch fresh articles
+  20 |     });
+  21 |     if (!res.ok) return { data: [], pagination: {} }; {
+  [cause]: AggregateError: 
+      at ignore-listed frames {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+Failed to proxy http://localhost:5000/api/auth/me AggregateError: 
+    at ignore-listed frames {
+  code: 'ECONNREFUSED',
+  [errors]: [
+    Error: connect ECONNREFUSED ::1:5000
+        at <unknown> (Error: connect ECONNREFUSED ::1:5000) {
+      errno: -4078,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '::1',
+      port: 5000
+    },
+    Error: connect ECONNREFUSED 127.0.0.1:5000
+        at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:5000) {
+      errno: -4078,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 5000
+    }
+  ]
+}
+AggregateError: 
+    at ignore-listed frames {
+  code: 'ECONNREFUSED',
+  [errors]: [
+    Error: connect ECONNREFUSED ::1:5000
+        at <unknown> (Error: connect ECONNREFUSED ::1:5000) {
+      errno: -4078,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '::1',
+      port: 5000
+    },
+    Error: connect ECONNREFUSED 127.0.0.1:5000
+        at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:5000) {
+      errno: -4078,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 5000
+    }
+  ]
+}
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/6f5cf36e-5954-44f9-b356-2be5e15356a1.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+Failed to proxy http://localhost:5000/api/articles?page=1&limit=12 AggregateError: 
+    at ignore-listed frames {
+  code: 'ECONNREFUSED',
+  [errors]: [
+    Error: connect ECONNREFUSED ::1:5000
+        at <unknown> (Error: connect ECONNREFUSED ::1:5000) {
+      errno: -4078,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '::1',
+      port: 5000
+    },
+    Error: connect ECONNREFUSED 127.0.0.1:5000
+        at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:5000) {
+      errno: -4078,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 5000
+    }
+  ]
+}
+AggregateError: 
+    at ignore-listed frames {
+  code: 'ECONNREFUSED',
+  [errors]: [
+    Error: connect ECONNREFUSED ::1:5000
+        at <unknown> (Error: connect ECONNREFUSED ::1:5000) {
+      errno: -4078,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '::1',
+      port: 5000
+    },
+    Error: connect ECONNREFUSED 127.0.0.1:5000
+        at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:5000) {
+      errno: -4078,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 5000
+    }
+  ]
+}
+[browser] SyntaxError: Unexpected token 'I', "Internal S"... is not valid JSON
+SyntaxError: Unexpected token 'I', "Internal S"... is not valid JSON (components/articles/ArticlesClient.tsx:116:17)
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/6f5cf36e-5954-44f9-b356-2be5e15356a1.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/91999519-de24-44de-8f76-cbbb8d0d5727.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/2a4164aacd907666bdf1e89f9972a8be.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/888f1666bf1c7210c7a6c72ff73195fc.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/082ff01b10d12116b8b6b7e2b62a2dbf.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/a00d1a7b2b4f89c86853fa72892fab25.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/c731f3651f1c579a76a99ad5b7baa522.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/0970af67df059ed5935d9bef50e9b19e.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/5bd6c73e1aeac89b67e23aae946992dc.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/12e96b39d58baedb63affbe19a9b62d1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/8b8364e3d8920dbe6b2e1bdb55db8420.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/402a661a6a58205ac6aaa8982a32810f.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/ad9d1b2fd3cd97497da109e5e8d65ced.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/94e5a48635ce96762464e341c1f23999.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/e3f4b268-d502-44fc-a58d-6af941e6639b.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/d58c4ff6e815404acb6953da13760b49.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/888f1666bf1c7210c7a6c72ff73195fc.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/ad9d1b2fd3cd97497da109e5e8d65ced.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/c731f3651f1c579a76a99ad5b7baa522.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/0970af67df059ed5935d9bef50e9b19e.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/12e96b39d58baedb63affbe19a9b62d1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/5bd6c73e1aeac89b67e23aae946992dc.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/8b8364e3d8920dbe6b2e1bdb55db8420.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/082ff01b10d12116b8b6b7e2b62a2dbf.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/402a661a6a58205ac6aaa8982a32810f.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/a00d1a7b2b4f89c86853fa72892fab25.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/774df4b2fe61c3dfdb5b4d16a62ec005.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/774df4b2fe61c3dfdb5b4d16a62ec005.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/774df4b2fe61c3dfdb5b4d16a62ec005.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/888f1666bf1c7210c7a6c72ff73195fc.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/c731f3651f1c579a76a99ad5b7baa522.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/12e96b39d58baedb63affbe19a9b62d1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/8b8364e3d8920dbe6b2e1bdb55db8420.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/402a661a6a58205ac6aaa8982a32810f.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/ad9d1b2fd3cd97497da109e5e8d65ced.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/0970af67df059ed5935d9bef50e9b19e.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/5bd6c73e1aeac89b67e23aae946992dc.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/082ff01b10d12116b8b6b7e2b62a2dbf.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/a00d1a7b2b4f89c86853fa72892fab25.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/e3f4b268-d502-44fc-a58d-6af941e6639b.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/774df4b2fe61c3dfdb5b4d16a62ec005.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/774df4b2fe61c3dfdb5b4d16a62ec005.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/888f1666bf1c7210c7a6c72ff73195fc.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/c731f3651f1c579a76a99ad5b7baa522.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/12e96b39d58baedb63affbe19a9b62d1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/8b8364e3d8920dbe6b2e1bdb55db8420.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/402a661a6a58205ac6aaa8982a32810f.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/ad9d1b2fd3cd97497da109e5e8d65ced.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/0970af67df059ed5935d9bef50e9b19e.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/5bd6c73e1aeac89b67e23aae946992dc.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/082ff01b10d12116b8b6b7e2b62a2dbf.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/a00d1a7b2b4f89c86853fa72892fab25.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/6f5cf36e-5954-44f9-b356-2be5e15356a1.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/6f5cf36e-5954-44f9-b356-2be5e15356a1.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/91999519-de24-44de-8f76-cbbb8d0d5727.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/888f1666bf1c7210c7a6c72ff73195fc.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/774df4b2fe61c3dfdb5b4d16a62ec005.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/c731f3651f1c579a76a99ad5b7baa522.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/12e96b39d58baedb63affbe19a9b62d1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/0970af67df059ed5935d9bef50e9b19e.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/5bd6c73e1aeac89b67e23aae946992dc.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/082ff01b10d12116b8b6b7e2b62a2dbf.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/a00d1a7b2b4f89c86853fa72892fab25.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/8b8364e3d8920dbe6b2e1bdb55db8420.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/402a661a6a58205ac6aaa8982a32810f.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/ad9d1b2fd3cd97497da109e5e8d65ced.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/94e5a48635ce96762464e341c1f23999.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/e3f4b268-d502-44fc-a58d-6af941e6639b.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+⚠ Fast Refresh had to perform a full reload when ./components/tools/ToolsClient.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload when ./components/tools/ToolsClient.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/e3f4b268-d502-44fc-a58d-6af941e6639b.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/6f5cf36e-5954-44f9-b356-2be5e15356a1.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/91999519-de24-44de-8f76-cbbb8d0d5727.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/91999519-de24-44de-8f76-cbbb8d0d5727.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/6f5cf36e-5954-44f9-b356-2be5e15356a1.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/a00d1a7b2b4f89c86853fa72892fab25.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/082ff01b10d12116b8b6b7e2b62a2dbf.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/0970af67df059ed5935d9bef50e9b19e.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/8b8364e3d8920dbe6b2e1bdb55db8420.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/94e5a48635ce96762464e341c1f23999.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/5bd6c73e1aeac89b67e23aae946992dc.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/402a661a6a58205ac6aaa8982a32810f.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/ad9d1b2fd3cd97497da109e5e8d65ced.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/12e96b39d58baedb63affbe19a9b62d1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/c731f3651f1c579a76a99ad5b7baa522.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/888f1666bf1c7210c7a6c72ff73195fc.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/034f09dc70fbc271bb7b43dfe3cc3e6e.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/034f09dc70fbc271bb7b43dfe3cc3e6e.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/888f1666bf1c7210c7a6c72ff73195fc.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/c731f3651f1c579a76a99ad5b7baa522.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/12e96b39d58baedb63affbe19a9b62d1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/8b8364e3d8920dbe6b2e1bdb55db8420.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/402a661a6a58205ac6aaa8982a32810f.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/ad9d1b2fd3cd97497da109e5e8d65ced.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/0970af67df059ed5935d9bef50e9b19e.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/5bd6c73e1aeac89b67e23aae946992dc.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/082ff01b10d12116b8b6b7e2b62a2dbf.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/a00d1a7b2b4f89c86853fa72892fab25.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/91999519-de24-44de-8f76-cbbb8d0d5727.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/6f5cf36e-5954-44f9-b356-2be5e15356a1.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/94e5a48635ce96762464e341c1f23999.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/034f09dc70fbc271bb7b43dfe3cc3e6e.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/888f1666bf1c7210c7a6c72ff73195fc.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/c731f3651f1c579a76a99ad5b7baa522.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/12e96b39d58baedb63affbe19a9b62d1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/8b8364e3d8920dbe6b2e1bdb55db8420.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/402a661a6a58205ac6aaa8982a32810f.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/ad9d1b2fd3cd97497da109e5e8d65ced.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/0970af67df059ed5935d9bef50e9b19e.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/5bd6c73e1aeac89b67e23aae946992dc.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/082ff01b10d12116b8b6b7e2b62a2dbf.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/a00d1a7b2b4f89c86853fa72892fab25.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/6f5cf36e-5954-44f9-b356-2be5e15356a1.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <__next_root_layout_boundary__>
+      <SegmentViewNode type="layout" pagePath="layout.tsx">
+        <SegmentTrieNode>
+        <link>
+        <script>
+        <script>
+        <script>
+        <RootLayout>
+          <html lang="en" className="geist_a715...">
+            <body className="flex flex-...">
+              <Script>
+              <GoogleAnalytics>
+              <script>
+              <script>
+              <script>
+              <ToastProvider>
+                <AuthProvider>
+                  <AnalyticsIdentity>
+                  <AnalyticsClickTracker>
+                  <SplashScreen>
+                  <Header>
+                  ...
+                    <div className="flex-grow ...">
+                      <section>
+                      <section>
+                      <section>
+                      <section>
+                      <section className="max-w-[144..." style={{...}}>
+                        <div className="grid grid-...">
+                          <LinkComponent>
+                          <LinkComponent>
+                          <LinkComponent>
+                          <LinkComponent>
+                          <LinkComponent>
+                          <LinkComponent>
+                          <LinkComponent href="/articles/..." className="flex flex-...">
+                            <a className="flex flex-..." ref={function} onClick={function onClick} ...>
+                              <div className="relative w...">
+                                <img>
+                                <div>
+                                <button
+                                  onClick={function onClick}
+                                  className="absolute top-3 right-3 w-8 h-8 backdrop-blur-md rounded-full flex items-c..."
+-                                 fdprocessedid="ytv5vg"
+                                >
+                                ...
+                              ...
+                          <LinkComponent href="/articles/..." className="flex flex-...">
+                            <a className="flex flex-..." ref={function} onClick={function onClick} ...>
+                              <div className="relative w...">
+                                <img>
+                                <div>
+                                <button
+                                  onClick={function onClick}
+                                  className="absolute top-3 right-3 w-8 h-8 backdrop-blur-md rounded-full flex items-c..."
+-                                 fdprocessedid="7mum88"
+                                >
+                                ...
+                              ...
+                          <LinkComponent href="/articles/..." className="flex flex-...">
+                            <a className="flex flex-..." ref={function} onClick={function onClick} ...>
+                              <div className="relative w...">
+                                <img>
+                                <div>
+                                <button
+                                  onClick={function onClick}
+                                  className="absolute top-3 right-3 w-8 h-8 backdrop-blur-md rounded-full flex items-c..."
+-                                 fdprocessedid="psbgof"
+                                >
+                                ...
+                              ...
+                          <LinkComponent href="/articles/..." className="flex flex-...">
+                            <a className="flex flex-..." ref={function} onClick={function onClick} ...>
+                              <div className="relative w...">
+                                <img>
+                                <div>
+                                <button
+                                  onClick={function onClick}
+                                  className="absolute top-3 right-3 w-8 h-8 backdrop-blur-md rounded-full flex items-c..."
+-                                 fdprocessedid="2pyyvm"
+                                >
+                                ...
+                              ...
+                          <LinkComponent href="/articles/..." className="flex flex-...">
+                            <a className="flex flex-..." ref={function} onClick={function onClick} ...>
+                              <div className="relative w...">
+                                <img>
+                                <div>
+                                <button
+                                  onClick={function onClick}
+                                  className="absolute top-3 right-3 w-8 h-8 backdrop-blur-md rounded-full flex items-c..."
+-                                 fdprocessedid="y1z5e9"
+                                >
+                                ...
+                              ...
+                        ...
+                      ...
+                  <Footer>
+                    <footer className="bg-white b...">
+                      <div className="max-w-[144...">
+                        <div className="grid grid-...">
+                          <div className="col-span-2...">
+                            <div>
+                            <p>
+                            <div className="flex items...">
+                              <LinkComponent>
+                              <button
+                                onClick={function handleShare}
+                                aria-label="Share"
+                                className="focus:outline-none"
+-                               fdprocessedid="d8r28g"
+                              >
+                              ...
+                          <div>
+                          <div>
+                          <div>
+                          <div className="col-span-2...">
+                            <h4>
+                            <p>
+                            <NewsletterForm className="flex flex-..." inputClassName="w-full px-..." inputStyle={{...}} ...>
+                              <form onSubmit={function handleSubmit} className="flex flex-...">
+                                <input
+                                  type="email"
+                                  name="email"
+                                  required={true}
+                                  placeholder="Enter your email"
+                                  className="w-full px-4 py-2.5 rounded-lg border border-[#E5E7EB] text-[#111827] plac..."
+                                  style={{--tw-ring-color:"#4F46E5",borderColor:"#4F46E5"}}
+                                  disabled={false}
+-                                 fdprocessedid="yidhw7"
+                                >
+                                <button
+                                  type="submit"
+                                  className="text-white font-semibold py-2.5 rounded-lg text-sm shadow-sm w-full"
+                                  style={{backgroundColor:"#4F46E5"}}
+                                  disabled={false}
+-                                 fdprocessedid="ihd1zoh"
+                                >
++                                 Subscribe
+                  ...
+                ...
+ 
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/6f5cf36e-5954-44f9-b356-2be5e15356a1.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/6f5cf36e-5954-44f9-b356-2be5e15356a1.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/91999519-de24-44de-8f76-cbbb8d0d5727.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/034f09dc70fbc271bb7b43dfe3cc3e6e.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/c731f3651f1c579a76a99ad5b7baa522.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/888f1666bf1c7210c7a6c72ff73195fc.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/12e96b39d58baedb63affbe19a9b62d1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/a00d1a7b2b4f89c86853fa72892fab25.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/0970af67df059ed5935d9bef50e9b19e.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/5bd6c73e1aeac89b67e23aae946992dc.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/8b8364e3d8920dbe6b2e1bdb55db8420.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/082ff01b10d12116b8b6b7e2b62a2dbf.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/402a661a6a58205ac6aaa8982a32810f.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/ad9d1b2fd3cd97497da109e5e8d65ced.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/94e5a48635ce96762464e341c1f23999.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/91999519-de24-44de-8f76-cbbb8d0d5727.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/6f5cf36e-5954-44f9-b356-2be5e15356a1.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/6f5cf36e-5954-44f9-b356-2be5e15356a1.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/article_covers/bf3f2bd6cc32a1c7fe44a2344f2caed0.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/888f1666bf1c7210c7a6c72ff73195fc.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/c731f3651f1c579a76a99ad5b7baa522.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/12e96b39d58baedb63affbe19a9b62d1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/0970af67df059ed5935d9bef50e9b19e.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/082ff01b10d12116b8b6b7e2b62a2dbf.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/5bd6c73e1aeac89b67e23aae946992dc.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/a00d1a7b2b4f89c86853fa72892fab25.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/8b8364e3d8920dbe6b2e1bdb55db8420.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/402a661a6a58205ac6aaa8982a32810f.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/ad9d1b2fd3cd97497da109e5e8d65ced.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/94e5a48635ce96762464e341c1f23999.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/4f54267b8cbd16d151066feffd1d6965.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/4f54267b8cbd16d151066feffd1d6965.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/888f1666bf1c7210c7a6c72ff73195fc.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/c731f3651f1c579a76a99ad5b7baa522.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/12e96b39d58baedb63affbe19a9b62d1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/8b8364e3d8920dbe6b2e1bdb55db8420.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/402a661a6a58205ac6aaa8982a32810f.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/ad9d1b2fd3cd97497da109e5e8d65ced.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/0970af67df059ed5935d9bef50e9b19e.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/5bd6c73e1aeac89b67e23aae946992dc.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/082ff01b10d12116b8b6b7e2b62a2dbf.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/a00d1a7b2b4f89c86853fa72892fab25.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/94e5a48635ce96762464e341c1f23999.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/6f5cf36e-5954-44f9-b356-2be5e15356a1.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/6f5cf36e-5954-44f9-b356-2be5e15356a1.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/91999519-de24-44de-8f76-cbbb8d0d5727.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/91999519-de24-44de-8f76-cbbb8d0d5727.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/6f5cf36e-5954-44f9-b356-2be5e15356a1.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/4f54267b8cbd16d151066feffd1d6965.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/888f1666bf1c7210c7a6c72ff73195fc.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/c731f3651f1c579a76a99ad5b7baa522.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/12e96b39d58baedb63affbe19a9b62d1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/a00d1a7b2b4f89c86853fa72892fab25.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/082ff01b10d12116b8b6b7e2b62a2dbf.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/0970af67df059ed5935d9bef50e9b19e.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/5bd6c73e1aeac89b67e23aae946992dc.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/8b8364e3d8920dbe6b2e1bdb55db8420.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/402a661a6a58205ac6aaa8982a32810f.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/ad9d1b2fd3cd97497da109e5e8d65ced.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/94e5a48635ce96762464e341c1f23999.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/4f54267b8cbd16d151066feffd1d6965.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/402a661a6a58205ac6aaa8982a32810f.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/888f1666bf1c7210c7a6c72ff73195fc.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/c731f3651f1c579a76a99ad5b7baa522.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/12e96b39d58baedb63affbe19a9b62d1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/8b8364e3d8920dbe6b2e1bdb55db8420.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/ad9d1b2fd3cd97497da109e5e8d65ced.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/94e5a48635ce96762464e341c1f23999.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/0970af67df059ed5935d9bef50e9b19e.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/5bd6c73e1aeac89b67e23aae946992dc.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/082ff01b10d12116b8b6b7e2b62a2dbf.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-0a928134dcdc420da2af02e6238ef06b.r2.dev/blog_covers/a00d1a7b2b4f89c86853fa72892fab25.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/6f5cf36e-5954-44f9-b356-2be5e15356a1.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/6f5cf36e-5954-44f9-b356-2be5e15356a1.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/91999519-de24-44de-8f76-cbbb8d0d5727.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/91999519-de24-44de-8f76-cbbb8d0d5727.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/6f5cf36e-5954-44f9-b356-2be5e15356a1.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes

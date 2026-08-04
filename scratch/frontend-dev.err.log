@@ -1,0 +1,1980 @@
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <RedirectErrorBoundary router={{...}}>
+      <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:{...}, ...}} segmentPath={[...]} ...>
+        <SegmentViewNode type="page" pagePath="page.tsx">
+          <SegmentTrieNode>
+          <HomePage>
+            <div className="flex-grow ...">
+              <script>
+              <header className="relative w...">
+                <div>
+                <div>
+                <div>
+                <div className="max-w-[144...">
+                  <div className="grid lg:gr...">
+                    <div className="max-w-2xl ...">
+                      <div>
+                      <h1>
+                      <p>
+                      <div>
+                      <div className="mt-7 max-w-xl">
+                        <Suspense fallback={{...}}>
+                          <HomeSearch>
+                            <form onSubmit={function handleSearch} className="relative f...">
+                              <input
+                                type="text"
+                                value=""
+                                onChange={function onChange}
+                                placeholder="Search tools (e.g., image generator, background remover...)"
+                                className="w-full pl-5 pr-14 py-4 rounded-xl border border-[#E5E7EB] shadow-sm focus:r..."
+-                               style={{caret-color:"transparent"}}
+                              >
+                              ...
+                      ...
+                    ...
+              ...
+        ...
+      ...
+ 
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <SegmentViewNode type="layout" pagePath="layout.tsx">
+      <SegmentTrieNode>
+      <link>
+      <script>
+      <script>
+      <script>
+      <RootLayout>
+        <html lang="en" className="geist_a715...">
+          <body className="flex flex-...">
+            <Script>
+            <GoogleAnalytics>
+            <script>
+            <script>
+            <script>
+            <ToastProvider>
+              <AuthProvider>
+                <AnalyticsIdentity>
+                <AnalyticsClickTracker>
+                <SplashScreen>
+                <Header>
+                <main>
+                <Footer>
+                  <footer className="bg-white b...">
+                    <div className="max-w-[144...">
+                      <div className="grid grid-...">
+                        <div>
+                        <div>
+                        <div>
+                        <div>
+                        <div className="col-span-2...">
+                          <h4>
+                          <p>
+                          <NewsletterForm className="flex flex-..." inputClassName="w-full px-..." inputStyle={{...}} ...>
+                            <form onSubmit={function handleSubmit} className="flex flex-...">
+                              <input
+                                type="email"
+                                name="email"
+                                required={true}
+                                placeholder="Enter your email"
+                                className="w-full px-4 py-2.5 rounded-lg border border-[#E5E7EB] text-[#111827] placeh..."
+                                style={{
++                                 --tw-ring-color: "#4F46E5"
+-                                 --tw-ring-color: "#4F46E5"
++                                 borderColor: "#4F46E5"
+-                                 border-top-color: "rgb(79, 70, 229)"
+-                                 border-right-color: "rgb(79, 70, 229)"
+-                                 border-bottom-color: "rgb(79, 70, 229)"
+-                                 border-left-color: "rgb(79, 70, 229)"
+-                                 caret-color: "transparent"
+                                }}
+                                disabled={false}
+                              >
+                              ...
+                ...
+              ...
+ 
+⨯ ./components/Footer.tsx:5:1
+Export Github doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Github was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-client] (ecmascript).
+Did you mean to import Gift?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+
+./components/Footer.tsx:5:1
+Export Github doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Github was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-ssr] (ecmascript).
+Did you mean to import Gift?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+
+./components/Footer.tsx:5:1
+Export Linkedin doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Linkedin was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-client] (ecmascript).
+Did you mean to import Link?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+
+./components/Footer.tsx:5:1
+Export Linkedin doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Linkedin was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-ssr] (ecmascript).
+Did you mean to import Link?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+⨯ ./components/Footer.tsx:5:1
+Export Github doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Github was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-client] (ecmascript).
+Did you mean to import Gift?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+
+./components/Footer.tsx:5:1
+Export Github doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Github was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-ssr] (ecmascript).
+Did you mean to import Gift?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+
+./components/Footer.tsx:5:1
+Export Linkedin doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Linkedin was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-client] (ecmascript).
+Did you mean to import Link?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+
+./components/Footer.tsx:5:1
+Export Linkedin doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Linkedin was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-ssr] (ecmascript).
+Did you mean to import Link?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+⨯ ./components/Footer.tsx:5:1
+Export Github doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Github was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-client] (ecmascript).
+Did you mean to import Gift?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+
+./components/Footer.tsx:5:1
+Export Github doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Github was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-ssr] (ecmascript).
+Did you mean to import Gift?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+
+./components/Footer.tsx:5:1
+Export Linkedin doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Linkedin was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-client] (ecmascript).
+Did you mean to import Link?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+
+./components/Footer.tsx:5:1
+Export Linkedin doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Linkedin was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-ssr] (ecmascript).
+Did you mean to import Link?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+⨯ ./components/Footer.tsx:5:1
+Export Github doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Github was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-client] (ecmascript).
+Did you mean to import Gift?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+
+./components/Footer.tsx:5:1
+Export Github doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Github was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-ssr] (ecmascript).
+Did you mean to import Gift?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+
+./components/Footer.tsx:5:1
+Export Linkedin doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Linkedin was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-client] (ecmascript).
+Did you mean to import Link?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+
+./components/Footer.tsx:5:1
+Export Linkedin doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Linkedin was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-ssr] (ecmascript).
+Did you mean to import Link?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+⨯ ./components/Footer.tsx:5:1
+Export Github doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Github was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-client] (ecmascript).
+Did you mean to import Gift?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+
+./components/Footer.tsx:5:1
+Export Github doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Github was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-ssr] (ecmascript).
+Did you mean to import Gift?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+
+./components/Footer.tsx:5:1
+Export Linkedin doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Linkedin was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-client] (ecmascript).
+Did you mean to import Link?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+
+./components/Footer.tsx:5:1
+Export Linkedin doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Linkedin was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-ssr] (ecmascript).
+Did you mean to import Link?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+⨯ ./components/Footer.tsx:5:1
+Export Github doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Github was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-client] (ecmascript).
+Did you mean to import Gift?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+
+./components/Footer.tsx:5:1
+Export Github doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Github was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-ssr] (ecmascript).
+Did you mean to import Gift?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+
+./components/Footer.tsx:5:1
+Export Linkedin doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Linkedin was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-client] (ecmascript).
+Did you mean to import Link?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+
+./components/Footer.tsx:5:1
+Export Linkedin doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Linkedin was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-ssr] (ecmascript).
+Did you mean to import Link?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+⨯ ./components/Footer.tsx:5:1
+Export Github doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Github was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-client] (ecmascript).
+Did you mean to import Gift?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+
+./components/Footer.tsx:5:1
+Export Github doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Github was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-ssr] (ecmascript).
+Did you mean to import Gift?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+
+./components/Footer.tsx:5:1
+Export Linkedin doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Linkedin was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-client] (ecmascript).
+Did you mean to import Link?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+
+./components/Footer.tsx:5:1
+Export Linkedin doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Linkedin was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-ssr] (ecmascript).
+Did you mean to import Link?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+⨯ ./components/Footer.tsx:5:1
+Export Github doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Github was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-client] (ecmascript).
+Did you mean to import Gift?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+
+./components/Footer.tsx:5:1
+Export Github doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Github was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-ssr] (ecmascript).
+Did you mean to import Gift?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+
+./components/Footer.tsx:5:1
+Export Linkedin doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Linkedin was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-client] (ecmascript).
+Did you mean to import Link?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+
+./components/Footer.tsx:5:1
+Export Linkedin doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Linkedin was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-ssr] (ecmascript).
+Did you mean to import Link?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+⨯ ./components/Footer.tsx:5:1
+Export Github doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Github was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-client] (ecmascript).
+Did you mean to import Gift?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+
+./components/Footer.tsx:5:1
+Export Github doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Github was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-ssr] (ecmascript).
+Did you mean to import Gift?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+
+./components/Footer.tsx:5:1
+Export Linkedin doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Linkedin was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-client] (ecmascript).
+Did you mean to import Link?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+
+./components/Footer.tsx:5:1
+Export Linkedin doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Linkedin was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-ssr] (ecmascript).
+Did you mean to import Link?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+⨯ ./components/Footer.tsx:5:1
+Export Github doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Github was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-client] (ecmascript).
+Did you mean to import Gift?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+
+./components/Footer.tsx:5:1
+Export Github doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Github was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-ssr] (ecmascript).
+Did you mean to import Gift?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+
+./components/Footer.tsx:5:1
+Export Linkedin doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Linkedin was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-client] (ecmascript).
+Did you mean to import Link?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+
+./components/Footer.tsx:5:1
+Export Linkedin doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Linkedin was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-ssr] (ecmascript).
+Did you mean to import Link?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+⨯ ./components/Footer.tsx:5:1
+Export Github doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Github was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-client] (ecmascript).
+Did you mean to import Gift?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+
+./components/Footer.tsx:5:1
+Export Github doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Github was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-ssr] (ecmascript).
+Did you mean to import Gift?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+
+./components/Footer.tsx:5:1
+Export Linkedin doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Linkedin was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-client] (ecmascript).
+Did you mean to import Link?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+
+./components/Footer.tsx:5:1
+Export Linkedin doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Linkedin was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-ssr] (ecmascript).
+Did you mean to import Link?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+⨯ ./components/Footer.tsx:5:1
+Export Github doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Github was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-client] (ecmascript).
+Did you mean to import Gift?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+
+./components/Footer.tsx:5:1
+Export Github doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Github was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-ssr] (ecmascript).
+Did you mean to import Gift?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+
+./components/Footer.tsx:5:1
+Export Linkedin doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Linkedin was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-client] (ecmascript).
+Did you mean to import Link?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+
+./components/Footer.tsx:5:1
+Export Linkedin doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Linkedin was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-ssr] (ecmascript).
+Did you mean to import Link?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+⨯ ./components/Footer.tsx:5:1
+Export Github doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Github was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-client] (ecmascript).
+Did you mean to import Gift?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+
+./components/Footer.tsx:5:1
+Export Github doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Github was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-ssr] (ecmascript).
+Did you mean to import Gift?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+
+./components/Footer.tsx:5:1
+Export Linkedin doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Linkedin was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-client] (ecmascript).
+Did you mean to import Link?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+
+./components/Footer.tsx:5:1
+Export Linkedin doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Linkedin was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-ssr] (ecmascript).
+Did you mean to import Link?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+⨯ ./components/Footer.tsx:5:1
+Export Github doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Github was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-client] (ecmascript).
+Did you mean to import Gift?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+
+./components/Footer.tsx:5:1
+Export Github doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Github was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-ssr] (ecmascript).
+Did you mean to import Gift?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+
+./components/Footer.tsx:5:1
+Export Linkedin doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Linkedin was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-client] (ecmascript).
+Did you mean to import Link?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+
+./components/Footer.tsx:5:1
+Export Linkedin doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Linkedin was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-ssr] (ecmascript).
+Did you mean to import Link?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+⨯ ./components/Footer.tsx:5:1
+Export Github doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Github was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-client] (ecmascript).
+Did you mean to import Gift?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+
+./components/Footer.tsx:5:1
+Export Github doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Github was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-ssr] (ecmascript).
+Did you mean to import Gift?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+
+./components/Footer.tsx:5:1
+Export Linkedin doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Linkedin was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-client] (ecmascript).
+Did you mean to import Link?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+
+./components/Footer.tsx:5:1
+Export Linkedin doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Linkedin was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-ssr] (ecmascript).
+Did you mean to import Link?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+⨯ ./components/Footer.tsx:5:1
+Export Github doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Github was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-client] (ecmascript).
+Did you mean to import Gift?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+
+./components/Footer.tsx:5:1
+Export Github doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Github was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-ssr] (ecmascript).
+Did you mean to import Gift?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+
+./components/Footer.tsx:5:1
+Export Linkedin doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Linkedin was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-client] (ecmascript).
+Did you mean to import Link?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+
+./components/Footer.tsx:5:1
+Export Linkedin doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Linkedin was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-ssr] (ecmascript).
+Did you mean to import Link?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+[browser] Uncaught Error: ./components/Footer.tsx:5:1
+Export Github doesn't exist in target module
+  3 | import React, { useState, useEffect } from 'react';
+  4 | import Link from 'next/link';
+> 5 | import { Zap, Globe, Share2, Mail, Linkedin, Github } from 'lucide-react';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { usePathname } from 'next/navigation';
+  7 | import { getEndpoint } from '../lib/api';
+  8 | import { useAuth } from '../contexts/AuthContext';
+
+The export Github was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-client] (ecmascript).
+Did you mean to import Gift?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+    at <unknown> (Error: ./components/Footer.tsx:5:1)
+    at <unknown> (Error: (./components/Footer.tsx:5:1)
+⨯ ./components/Footer.tsx:5:1
+Export Github doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Github was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-client] (ecmascript).
+Did you mean to import Gift?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+
+./components/Footer.tsx:5:1
+Export Github doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Github was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-ssr] (ecmascript).
+Did you mean to import Gift?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+
+./components/Footer.tsx:5:1
+Export Linkedin doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Linkedin was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-client] (ecmascript).
+Did you mean to import Link?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+
+./components/Footer.tsx:5:1
+Export Linkedin doesn't exist in target module
+  [90m3 |[0m [36mimport[0m [33mReact[0m, { useState, useEffect } [36mfrom[0m [32m'react'[0m;
+  [90m4 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mZap[0m, [33mGlobe[0m, [33mShare2[0m, [33mMail[0m, [33mLinkedin[0m, [33mGithub[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m'next/navigation'[0m;
+  [90m7 |[0m [36mimport[0m { getEndpoint } [36mfrom[0m [32m'../lib/api'[0m;
+  [90m8 |[0m [36mimport[0m { useAuth } [36mfrom[0m [32m'../contexts/AuthContext'[0m;
+
+The export Linkedin was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-ssr] (ecmascript).
+Did you mean to import Link?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/Footer.tsx
+    ./app/layout.tsx
+
+
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <RedirectErrorBoundary router={{...}}>
+      <Head>
+      <__next_root_layout_boundary__>
+        <SegmentViewNode type="layout" pagePath="layout.tsx">
+          <SegmentTrieNode>
+          <link>
+          <script>
+          <script>
+          <script>
+          <RootLayout>
+            <html lang="en" className="geist_a715...">
+              <body className="flex flex-...">
+                <Script>
+                <GoogleAnalytics>
+                <script>
+                <script>
+                <script>
+                <ToastProvider>
+                  <AuthProvider>
+                    <AnalyticsIdentity>
+                    <AnalyticsClickTracker>
+                    <SplashScreen>
+                    <Header>
+                      <nav className="sticky top...">
+                        <style>
+                        <div className="max-w-[144...">
+                          <LinkComponent>
+                          <div className="hidden lg:...">
+                            <LinkComponent>
+                            <LinkComponent>
+                            <div className="relative g...">
+                              <button
+                                className="flex items-center gap-1 hover:text-[#111827] transition-colors px-2 xl:px-3..."
+-                               fdprocessedid="o8s02d"
+                              >
+                              ...
+                            ...
+                          ...
+                    <main>
+                    <Footer>
+                      <footer className="bg-white b...">
+                        <div className="max-w-[144...">
+                          <div className="grid grid-...">
+                            <div className="col-span-2...">
+                              <div>
+                              <p>
+                              <div className="flex items...">
+                                <LinkComponent>
+                                <button
+                                  onClick={function handleShare}
+                                  aria-label="Share"
+                                  className="focus:outline-none"
+-                                 fdprocessedid="og1fi"
+                                >
+                                ...
+                            <div>
+                            <div>
+                            <div>
+                            <div className="col-span-2...">
+                              <h4>
+                              <p>
+                              <NewsletterForm className="flex flex-..." inputClassName="w-full px-..." inputStyle={{...}} ...>
+                                <form onSubmit={function handleSubmit} className="flex flex-...">
+                                  <input
+                                    type="email"
+                                    name="email"
+                                    required={true}
+                                    placeholder="Enter your email"
+                                    className="w-full px-4 py-2.5 rounded-lg border border-[#E5E7EB] text-[#111827] pl..."
+                                    style={{--tw-ring-color:"#4F46E5",borderColor:"#4F46E5"}}
+                                    disabled={false}
+-                                   fdprocessedid="0ihza8"
+                                  >
+                                  <button
+                                    type="submit"
+                                    className="text-white font-semibold py-2.5 rounded-lg text-sm shadow-sm w-full"
+                                    style={{backgroundColor:"#4F46E5"}}
+                                    disabled={false}
+-                                   fdprocessedid="ea6u6l"
+                                  >
++                                   Subscribe
+                    ...
+                  ...
+      ...
+ 
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <__next_root_layout_boundary__>
+      <SegmentViewNode type="layout" pagePath="layout.tsx">
+        <SegmentTrieNode>
+        <link>
+        <script>
+        <script>
+        <script>
+        <RootLayout>
+          <html lang="en" className="geist_a715...">
+            <body className="flex flex-...">
+              <Script>
+              <GoogleAnalytics>
+              <script>
+              <script>
+              <script>
+              <ToastProvider>
+                <AuthProvider>
+                  <AnalyticsIdentity>
+                  <AnalyticsClickTracker>
+                  <SplashScreen>
+                  <Header>
+                  <main>
+                  <Footer>
+                    <footer className="bg-white b...">
+                      <div className="max-w-[144...">
+                        <div className="grid grid-...">
+                          <div className="col-span-2...">
+                            <div>
+                            <p>
+                            <div className="flex items...">
+                              <LinkComponent>
+                              <button
+                                onClick={function handleShare}
+                                aria-label="Share"
+                                className="focus:outline-none"
+-                               fdprocessedid="ztk5a9"
+                              >
+                              ...
+                          <div>
+                          <div>
+                          <div>
+                          <div className="col-span-2...">
+                            <h4>
+                            <p>
+                            <NewsletterForm className="flex flex-..." inputClassName="w-full px-..." inputStyle={{...}} ...>
+                              <form onSubmit={function handleSubmit} className="flex flex-...">
+                                <input
+                                  type="email"
+                                  name="email"
+                                  required={true}
+                                  placeholder="Enter your email"
+                                  className="w-full px-4 py-2.5 rounded-lg border border-[#E5E7EB] text-[#111827] plac..."
+                                  style={{--tw-ring-color:"#4F46E5",borderColor:"#4F46E5"}}
+                                  disabled={false}
+-                                 fdprocessedid="6l9bq"
+                                >
+                                <button
+                                  type="submit"
+                                  className="text-white font-semibold py-2.5 rounded-lg text-sm shadow-sm w-full"
+                                  style={{backgroundColor:"#4F46E5"}}
+                                  disabled={false}
+-                                 fdprocessedid="93wmhn"
+                                >
++                                 Subscribe
+                  ...
+                ...
+ 
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <RedirectErrorBoundary router={{...}}>
+      <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:{...}, ...}} segmentPath={[...]} ...>
+        <SegmentViewNode type="page" pagePath="page.tsx">
+          <SegmentTrieNode>
+          <HomePage>
+            <div className="flex-grow ...">
+              <script>
+              <header className="relative w...">
+                <div>
+                <div>
+                <div>
+                <div className="max-w-[144...">
+                  <div className="grid lg:gr...">
+                    <div className="max-w-2xl ...">
+                      <div>
+                      <h1>
+                      <p>
+                      <div>
+                      <div className="mt-7 max-w-xl">
+                        <Suspense fallback={{...}}>
+                          <HomeSearch>
+                            <form onSubmit={function handleSearch} className="relative f...">
+                              <input
+                                type="text"
+                                value=""
+                                onChange={function onChange}
+                                placeholder="Search tools (e.g., image generator, background remover...)"
+                                className="w-full pl-5 pr-14 py-4 rounded-xl border border-[#E5E7EB] shadow-sm focus:r..."
+-                               fdprocessedid="gg39os"
+                              >
+                              <button
+                                type="submit"
+                                className="absolute right-2 p-2.5 bg-[#4F46E5] hover:bg-[#4338CA] text-white rounded-l..."
+-                               fdprocessedid="uj902"
+                              >
+                      ...
+                    ...
+              ...
+        ...
+      ...
+ 
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+Error [TimeoutError]: The operation was aborted due to timeout
+    at ignore-listed frames {
+  code: 23,
+  INDEX_SIZE_ERR: 1,
+  DOMSTRING_SIZE_ERR: 2,
+  HIERARCHY_REQUEST_ERR: 3,
+  WRONG_DOCUMENT_ERR: 4,
+  INVALID_CHARACTER_ERR: 5,
+  NO_DATA_ALLOWED_ERR: 6,
+  NO_MODIFICATION_ALLOWED_ERR: 7,
+  NOT_FOUND_ERR: 8,
+  NOT_SUPPORTED_ERR: 9,
+  INUSE_ATTRIBUTE_ERR: 10,
+  INVALID_STATE_ERR: 11,
+  SYNTAX_ERR: 12,
+  INVALID_MODIFICATION_ERR: 13,
+  NAMESPACE_ERR: 14,
+  INVALID_ACCESS_ERR: 15,
+  VALIDATION_ERR: 16,
+  TYPE_MISMATCH_ERR: 17,
+  SECURITY_ERR: 18,
+  NETWORK_ERR: 19,
+  ABORT_ERR: 20,
+  URL_MISMATCH_ERR: 21,
+  QUOTA_EXCEEDED_ERR: 22,
+  TIMEOUT_ERR: 23,
+  INVALID_NODE_TYPE_ERR: 24,
+  DATA_CLONE_ERR: 25
+}
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/91999519-de24-44de-8f76-cbbb8d0d5727.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <RedirectErrorBoundary router={{...}}>
+      <Head>
+      <__next_root_layout_boundary__>
+        <SegmentViewNode type="layout" pagePath="layout.tsx">
+          <SegmentTrieNode>
+          <link>
+          <script>
+          <script>
+          <script>
+          <RootLayout>
+            <html lang="en" className="geist_a715...">
+              <body className="flex flex-...">
+                <Script>
+                <GoogleAnalytics>
+                <script>
+                <script>
+                <script>
+                <ToastProvider>
+                  <AuthProvider>
+                    <AnalyticsIdentity>
+                    <AnalyticsClickTracker>
+                    <SplashScreen>
+                    <Header>
+                      <nav className="sticky top...">
+                        <style>
+                        <div className="max-w-[144...">
+                          <LinkComponent>
+                          <div className="hidden lg:...">
+                            <LinkComponent>
+                            <LinkComponent>
+                            <div className="relative g...">
+                              <button
+                                className="flex items-center gap-1 hover:text-[#111827] transition-colors px-2 xl:px-3..."
+-                               fdprocessedid="5yuyh"
+                              >
+                              ...
+                            ...
+                          ...
+                    ...
+                      <NewsClient initialNews={[...]} initialPagination={{}}>
+                        <div className="min-h-scre...">
+                          <style>
+                          <section className="bg-white b...">
+                            <div>
+                            <div>
+                            <div>
+                            <div className="max-w-[144...">
+                              <div className="max-w-2xl">
+                                <h1>
+                                <p>
+                                <div className="relative m...">
+                                  <div>
+                                  <input
+                                    type="text"
+                                    value=""
+                                    onChange={function onChange}
+                                    placeholder="Search news..."
+                                    className="w-full pl-12 pr-4 py-4 rounded-2xl border border-gray-200 focus:outline..."
+-                                   fdprocessedid="edip4"
+                                  >
+                              ...
+                          <section className="max-w-[144...">
+                            <div className="flex flex-...">
+                              <div className="flex-1" style={{...}}>
+                                <div className="flex flex-...">
+                                  <h2>
+                                  <div className="flex items...">
+                                    <span>
+                                    <div className="relative s...">
+                                      <button
+                                        onClick={function onClick}
+                                        className="flex items-center justify-between w-[120px] bg-white border border-..."
+-                                       fdprocessedid="eh80vo"
+                                      >
+                                <div className="flex flex-...">
+                                  <button
+                                    onClick={function onClick}
+                                    className="px-4 py-2 rounded-full text-xs font-bold transition-all border bg-[#4F4..."
+-                                   fdprocessedid="ymcffc"
+                                  >
++                                   All News
+                                <div className="text-cente...">
+                                  <div>
+                                  <p>
+                                  <p>
+                                  <button
+                                    onClick={function onClick}
+                                    className="px-6 py-2.5 bg-[#4F46E5] text-white text-sm font-bold rounded-full hove..."
+-                                   fdprocessedid="7sbkvt"
+                                  >
++                                   Clear Filters
+                                ...
+                              <aside className="w-full lg:...">
+                                <NewsletterSectionWrapper>
+                                <div className="bg-white r...">
+                                  <h3>
+                                  <ul className="space-y-3">
+                                    <li>
+                                      <button
+                                        onClick={function onClick}
+                                        className="w-full flex items-center justify-between text-sm text-[#4B5563] hov..."
+-                                       fdprocessedid="8c2gdb"
+                                      >
+                                ...
+                    <Footer>
+                      <footer className="bg-white b...">
+                        <div className="max-w-[144...">
+                          <div className="grid grid-...">
+                            <div className="col-span-2...">
+                              <div>
+                              <p>
+                              <div className="flex items...">
+                                <LinkComponent>
+                                <button
+                                  onClick={function handleShare}
+                                  aria-label="Share"
+                                  className="focus:outline-none"
+-                                 fdprocessedid="miio88"
+                                >
+                                ...
+                            <div>
+                            <div>
+                            <div>
+                            <div className="col-span-2...">
+                              <h4>
+                              <p>
+                              <NewsletterForm className="flex flex-..." inputClassName="w-full px-..." inputStyle={{...}} ...>
+                                <form onSubmit={function handleSubmit} className="flex flex-...">
+                                  <input
+                                    type="email"
+                                    name="email"
+                                    required={true}
+                                    placeholder="Enter your email"
+                                    className="w-full px-4 py-2.5 rounded-lg border border-[#E5E7EB] text-[#111827] pl..."
+                                    style={{--tw-ring-color:"#4F46E5",borderColor:"#4F46E5"}}
+                                    disabled={false}
+-                                   fdprocessedid="dbbftv"
+                                  >
+                                  <button
+                                    type="submit"
+                                    className="text-white font-semibold py-2.5 rounded-lg text-sm shadow-sm w-full"
+                                    style={{backgroundColor:"#4F46E5"}}
+                                    disabled={false}
+-                                   fdprocessedid="jz2ec"
+                                  >
++                                   Subscribe
+                    ...
+                  ...
+      ...
+ 
+[browser] Image with src "https://pub-68a98c57e70a4a1fa317739dd20098b9.r2.dev/91999519-de24-44de-8f76-cbbb8d0d5727.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes

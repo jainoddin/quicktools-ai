@@ -1,0 +1,159 @@
+
+> quicktools-project@0.1.0 dev
+> next dev -p 3001
+
+▲ Next.js 16.2.10 (Turbopack)
+- Local:         http://localhost:3001
+- Network:       http://192.168.1.38:3001
+- Environments: .env.local
+✓ Ready in 1798ms
+Creating turbopack project {
+  dir: 'C:\\Users\\jain\\.gemini\\antigravity\\scratch\\quicktools-project\\frontend',
+  testMode: true
+}
+
+○ Compiling / ...
+✓ Finished writing to filesystem cache in 22.1s
+✓ Finished filesystem cache database compaction in 10.4s
+✓ Finished filesystem cache database compaction in 18.1s
+ GET / 200 in 78s (next.js: 61s, application-code: 17.1s)
+ GET / 200 in 91s (next.js: 75s, application-code: 16.3s)
+○ Compiling /icon ...
+ GET /icon?2d46418ae93fcf1b 200 in 12.7s (next.js: 10.7s, application-code: 2.0s)
+✓ Finished filesystem cache database compaction in 17.5s
+✓ Finished filesystem cache database compaction in 11.1s
+○ Compiling /pricing ...
+ GET /pricing 200 in 13.8s (next.js: 13.7s, application-code: 151ms)
+ GET /icon?2d46418ae93fcf1b 200 in 97ms (next.js: 31ms, application-code: 66ms)
+ GET / 200 in 456ms (next.js: 21ms, application-code: 435ms)
+ GET /pricing 200 in 83ms (next.js: 13ms, application-code: 70ms)
+ GET / 200 in 370ms (next.js: 18ms, application-code: 352ms)
+✓ Compiled in 6.8s
+ GET / 200 in 2.8s (next.js: 398ms, application-code: 2.4s)
+ GET / 200 in 1699ms (next.js: 26ms, application-code: 1673ms)
+ GET / 200 in 1233ms (next.js: 36ms, application-code: 1197ms)
+ GET / 200 in 1234ms (next.js: 594ms, application-code: 640ms)
+ GET / 200 in 1218ms (next.js: 12ms, application-code: 1207ms)
+ GET / 200 in 530ms (next.js: 13ms, application-code: 517ms)
+ GET / 200 in 559ms (next.js: 11ms, application-code: 548ms)
+ GET / 200 in 490ms (next.js: 11ms, application-code: 479ms)
+ GET / 200 in 511ms (next.js: 11ms, application-code: 500ms)
+ GET / 200 in 311ms (next.js: 8ms, application-code: 302ms)
+ GET / 200 in 316ms (next.js: 7ms, application-code: 309ms)
+○ Compiling /about ...
+ GET /about 200 in 8.3s (next.js: 7.9s, application-code: 457ms)
+○ Compiling /articles ...
+ GET /articles 200 in 17.3s (next.js: 7.1s, application-code: 10.2s)
+○ Compiling /articles/[slug] ...
+ GET /articles/ai-website-builders-evaluated-best-platforms-for-2026 200 in 19.7s (next.js: 9.5s, application-code: 10.2s)
+ GET /articles/best-ai-image-generators-top-tools-for-stunning-visuals 200 in 20.0s (next.js: 23ms, application-code: 20.0s)
+○ Compiling /blog ...
+ GET /blog 200 in 17.5s (next.js: 7.3s, application-code: 10.2s)
+○ Compiling /blog/[slug] ...
+ GET /blog/best-free-ai-tools-the-ultimate-guide-to-boosting-productivity-in-2026 200 in 20.0s (next.js: 15.1s, application-code: 4.9s)
+ GET /blog/perplexity-ai-in-2026-the-ultimate-guide-to-the-worlds-leading-answer-engine 200 in 10.2s (next.js: 29ms, application-code: 10.1s)
+ GET /blog/perplexity-ai-the-complete-guide-to-the-new-king-of-search-and-discovery 200 in 3.4s (next.js: 16ms, application-code: 3.4s)
+✓ Compiled in 426ms
+ GET / 200 in 1319ms (next.js: 446ms, application-code: 873ms)
+ GET / 200 in 451ms (next.js: 50ms, application-code: 401ms)
+✓ Finished filesystem cache database compaction in 11.5s
+✓ Compiled in 111.6s
+○ Compiling /_error ...
+ GET / 500 in 3.3s (next.js: 2.5s, application-code: 832ms)
+ GET / 500 in 20.9s (next.js: 20.6s, application-code: 262ms)
+ GET / 500 in 3.3s (next.js: 3.1s, application-code: 214ms)
+ GET / 500 in 3.5s (next.js: 3.3s, application-code: 164ms)
+ GET / 500 in 3.3s (next.js: 3.2s, application-code: 120ms)
+ GET / 500 in 3.7s (next.js: 3.7s, application-code: 73ms)
+ GET / 500 in 481ms (next.js: 193ms, application-code: 287ms)
+ GET / 500 in 480ms (next.js: 242ms, application-code: 238ms)
+ GET / 500 in 477ms (next.js: 288ms, application-code: 189ms)
+ GET / 500 in 475ms (next.js: 334ms, application-code: 141ms)
+ GET / 500 in 475ms (next.js: 374ms, application-code: 100ms)
+ GET / 500 in 474ms (next.js: 422ms, application-code: 52ms)
+ GET / 500 in 235ms (next.js: 98ms, application-code: 138ms)
+ GET / 500 in 236ms (next.js: 126ms, application-code: 109ms)
+ GET / 500 in 236ms (next.js: 158ms, application-code: 78ms)
+ GET / 500 in 238ms (next.js: 190ms, application-code: 48ms)
+ GET /icon 500 in 75ms (next.js: 40ms, application-code: 36ms)
+ GET / 500 in 77ms (next.js: 42ms, application-code: 35ms)
+ GET / 200 in 1965ms (next.js: 478ms, application-code: 1487ms)
+ GET / 200 in 1367ms (next.js: 267ms, application-code: 1100ms)
+ GET / 200 in 970ms (next.js: 19ms, application-code: 951ms)
+ GET /icon?2d46418ae93fcf1b 200 in 416ms (next.js: 187ms, application-code: 229ms)
+ GET / 200 in 11.0s (next.js: 81ms, application-code: 10.9s)
+ GET /icon?2d46418ae93fcf1b 200 in 81ms (next.js: 16ms, application-code: 64ms)
+ GET / 200 in 990ms (next.js: 17ms, application-code: 973ms)
+ GET / 200 in 10.7s (next.js: 14ms, application-code: 10.6s)
+ GET /icon?2d46418ae93fcf1b 200 in 239ms (next.js: 54ms, application-code: 185ms)
+✓ Compiled in 1216ms
+ GET / 200 in 1481ms (next.js: 644ms, application-code: 836ms)
+ GET / 200 in 11.5s (next.js: 27ms, application-code: 11.5s)
+ GET /icon?2d46418ae93fcf1b 200 in 317ms (next.js: 233ms, application-code: 84ms)
+○ Compiling /faq ...
+ GET /faq 200 in 24.0s (next.js: 23.8s, application-code: 139ms)
+ GET /faq 200 in 133ms (next.js: 15ms, application-code: 118ms)
+ GET /icon?2d46418ae93fcf1b 200 in 368ms (next.js: 300ms, application-code: 68ms)
+ GET / 200 in 708ms (next.js: 295ms, application-code: 413ms)
+○ Compiling /tools ...
+ GET /tools 200 in 28.9s (next.js: 28.8s, application-code: 149ms)
+✓ Compiled in 698ms
+ GET /tools 200 in 1191ms (next.js: 482ms, application-code: 709ms)
+ GET /tools 200 in 493ms (next.js: 19ms, application-code: 474ms)
+ GET /tools 200 in 544ms (next.js: 25ms, application-code: 519ms)
+ GET /tools 200 in 545ms (next.js: 110ms, application-code: 434ms)
+ GET /tools 200 in 545ms (next.js: 193ms, application-code: 351ms)
+ GET /tools 200 in 544ms (next.js: 264ms, application-code: 281ms)
+ GET /tools 200 in 433ms (next.js: 18ms, application-code: 416ms)
+ GET /tools 200 in 336ms (next.js: 15ms, application-code: 321ms)
+ GET /tools 200 in 239ms (next.js: 93ms, application-code: 146ms)
+ GET /tools 200 in 244ms (next.js: 14ms, application-code: 230ms)
+ GET /tools 200 in 447ms (next.js: 293ms, application-code: 154ms)
+✓ Compiled in 813ms
+ GET /tools 200 in 465ms (next.js: 238ms, application-code: 227ms)
+ GET /tools 200 in 98ms (next.js: 14ms, application-code: 84ms)
+ GET /tools 200 in 252ms (next.js: 159ms, application-code: 93ms)
+ GET /tools 200 in 356ms (next.js: 231ms, application-code: 124ms)
+✓ Compiled in 413ms
+ GET /tools 200 in 560ms (next.js: 254ms, application-code: 306ms)
+ GET /tools 200 in 146ms (next.js: 20ms, application-code: 126ms)
+✓ Compiled in 804ms
+ GET /tools 200 in 474ms (next.js: 233ms, application-code: 241ms)
+ GET /tools 200 in 111ms (next.js: 15ms, application-code: 96ms)
+✓ Compiled in 367ms
+ GET /tools 200 in 454ms (next.js: 251ms, application-code: 204ms)
+ GET /tools 200 in 82ms (next.js: 13ms, application-code: 69ms)
+✓ Compiled in 381ms
+ GET /tools 200 in 372ms (next.js: 171ms, application-code: 201ms)
+ GET /tools 200 in 108ms (next.js: 18ms, application-code: 90ms)
+✓ Compiled in 351ms
+ GET /tools 200 in 437ms (next.js: 231ms, application-code: 206ms)
+ GET /tools 200 in 82ms (next.js: 13ms, application-code: 69ms)
+✓ Compiled in 616ms
+ GET /tools 200 in 373ms (next.js: 212ms, application-code: 161ms)
+ GET /tools 200 in 65ms (next.js: 11ms, application-code: 54ms)
+ GET / 200 in 1296ms (next.js: 298ms, application-code: 998ms)
+ GET /pricing 200 in 1233ms (next.js: 353ms, application-code: 880ms)
+ GET /about 200 in 1375ms (next.js: 439ms, application-code: 936ms)
+○ Compiling /author/quicktools-ai-team ...
+ GET /author/quicktools-ai-team 200 in 15.7s (next.js: 15.1s, application-code: 584ms)
+○ Compiling /checkout ...
+ GET /checkout?plan=starter 200 in 10.3s (next.js: 9.9s, application-code: 388ms)
+○ Compiling /checkout/payment ...
+ GET /checkout/payment?plan=pro 200 in 11.6s (next.js: 11.2s, application-code: 416ms)
+✓ Compiled in 493ms
+ GET /tools 200 in 542ms (next.js: 293ms, application-code: 249ms)
+ GET /tools 200 in 107ms (next.js: 22ms, application-code: 85ms)
+✓ Compiled in 369ms
+ GET /tools 200 in 562ms (next.js: 275ms, application-code: 287ms)
+ GET /tools 200 in 124ms (next.js: 16ms, application-code: 108ms)
+✓ Compiled in 548ms
+ GET /tools 200 in 310ms (next.js: 159ms, application-code: 151ms)
+ GET /tools 200 in 68ms (next.js: 11ms, application-code: 57ms)
+ GET /blog 200 in 11.6s (next.js: 950ms, application-code: 10.6s)
+ GET /articles 200 in 10.9s (next.js: 465ms, application-code: 10.5s)
+○ Compiling /news ...
+ GET /news 200 in 30.7s (next.js: 20.3s, application-code: 10.4s)
+ GET /icon?2d46418ae93fcf1b 200 in 503ms (next.js: 267ms, application-code: 237ms)
+ GET /news 200 in 10.9s (next.js: 35ms, application-code: 10.8s)
+ GET /icon?2d46418ae93fcf1b 200 in 41ms (next.js: 9ms, application-code: 32ms)

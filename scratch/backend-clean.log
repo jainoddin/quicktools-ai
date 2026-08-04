@@ -1,0 +1,14 @@
+
+> quicktools-backend@1.0.0 dev
+> ts-node-dev --respawn --transpile-only src/index.ts
+
+[INFO] 23:41:03 ts-node-dev ver. 2.0.0 (using ts-node ver. 10.9.2, typescript ver. 5.9.3)
+✅ MongoDB connected successfully
+   - Blog:    Morning — 9:02 AM (retry every 5 mins till 11:59 PM)
+   - News:    Afternoon — 1:02 PM (retry every 5 mins till 5:59 PM)
+   - Article: Night — 9:02 PM (retry every 5 mins till 11:59 PM)
+   - Marketing Email: 10:00 AM daily
+   - Social Media Auto-Poster: 9:30 AM, 2:30 PM, 7:30 PM daily (LinkedIn, FB, Insta)
+   - Accounts: Purge deactivated (15+ days) — 3:00 AM daily
+✅ Social Media Auto-Poster Cron Job Scheduled (Daily at 10:00 AM)
+[ERROR] 23:41:09 Error: listen EADDRINUSE: address already in use 0.0.0.0:5000
