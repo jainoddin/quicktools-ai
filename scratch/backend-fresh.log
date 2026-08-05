@@ -1440,3 +1440,445 @@ src/routes/community.routes.ts(76,1): error TS1005: '}' expected.
    - Accounts: Purge deactivated (15+ days) — 3:00 AM daily
 ✅ Social Media Auto-Poster Cron Job Scheduled (Daily at 10:00 AM)
 [ERROR] 02:30:01 Error: listen EADDRINUSE: address already in use 0.0.0.0:5000
+[INFO] 03:29:06 Restarting: C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\src\routes\community.routes.ts has been modified
+✅ MongoDB connected successfully
+   - Blog:    Morning — 9:02 AM (retry every 5 mins till 11:59 PM)
+   - News:    Afternoon — 1:02 PM (retry every 5 mins till 5:59 PM)
+   - Article: Night — 9:02 PM (retry every 5 mins till 11:59 PM)
+   - Marketing Email: 10:00 AM daily
+   - Social Media Auto-Poster: 9:30 AM, 2:30 PM, 7:30 PM daily (LinkedIn, FB, Insta)
+   - Accounts: Purge deactivated (15+ days) — 3:00 AM daily
+✅ Social Media Auto-Poster Cron Job Scheduled (Daily at 10:00 AM)
+[ERROR] 03:29:36 Error: listen EADDRINUSE: address already in use 0.0.0.0:5000
+[INFO] 03:32:53 Restarting: C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\src\routes\community.routes.ts has been modified
+✅ MongoDB connected successfully
+   - Blog:    Morning — 9:02 AM (retry every 5 mins till 11:59 PM)
+   - News:    Afternoon — 1:02 PM (retry every 5 mins till 5:59 PM)
+   - Article: Night — 9:02 PM (retry every 5 mins till 11:59 PM)
+   - Marketing Email: 10:00 AM daily
+   - Social Media Auto-Poster: 9:30 AM, 2:30 PM, 7:30 PM daily (LinkedIn, FB, Insta)
+   - Accounts: Purge deactivated (15+ days) — 3:00 AM daily
+✅ Social Media Auto-Poster Cron Job Scheduled (Daily at 10:00 AM)
+[ERROR] 03:33:10 Error: listen EADDRINUSE: address already in use 0.0.0.0:5000
+[INFO] 13:11:43 Restarting: C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\src\services\imageQualityPipeline.ts has been modified
+✅ MongoDB connected successfully
+   - Blog:    Morning — 9:02 AM (retry every 5 mins till 11:59 PM)
+   - News:    Afternoon — 1:02 PM (retry every 5 mins till 5:59 PM)
+   - Article: Night — 9:02 PM (retry every 5 mins till 11:59 PM)
+   - Marketing Email: 10:00 AM daily
+   - Social Media Auto-Poster: 9:30 AM, 2:30 PM, 7:30 PM daily (LinkedIn, FB, Insta)
+   - Accounts: Purge deactivated (15+ days) — 3:00 AM daily
+✅ Social Media Auto-Poster Cron Job Scheduled (Daily at 10:00 AM)
+🚀 Backend running on http://localhost:5000
+📡 API: http://localhost:5000/api/blogs
+⏰ Cron: Daily blog at 9:00 AM IST
+⏰ Daily blog generation cron triggered at 2026-08-05T07:45:00.053Z
+⏰ Afternoon NEWS generation cron triggered at 2026-08-05T07:45:00.077Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+⚠️ Daily News lock already acquired by another process today. Skipping.
+[INFO] 13:16:17 Restarting: C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\src\services\imageQualityPipeline.ts has been modified
+✅ MongoDB connected successfully
+   - Blog:    Morning — 9:02 AM (retry every 5 mins till 11:59 PM)
+   - News:    Afternoon — 1:02 PM (retry every 5 mins till 5:59 PM)
+   - Article: Night — 9:02 PM (retry every 5 mins till 11:59 PM)
+   - Marketing Email: 10:00 AM daily
+   - Social Media Auto-Poster: 9:30 AM, 2:30 PM, 7:30 PM daily (LinkedIn, FB, Insta)
+   - Accounts: Purge deactivated (15+ days) — 3:00 AM daily
+✅ Social Media Auto-Poster Cron Job Scheduled (Daily at 10:00 AM)
+🚀 Backend running on http://localhost:5000
+📡 API: http://localhost:5000/api/blogs
+⏰ Cron: Daily blog at 9:00 AM IST
+⏰ Daily blog generation cron triggered at 2026-08-05T07:50:00.745Z
+⏰ Afternoon NEWS generation cron triggered at 2026-08-05T07:50:00.788Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+⚠️ Daily News lock already acquired by another process today. Skipping.
+[INFO] 13:21:13 Restarting: C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\src\cron\blogScheduler.ts has been modified
+✅ MongoDB connected successfully
+   - Blog:    Morning — 9:02 AM (retry every 5 mins till 11:59 PM)
+   - News:    Afternoon — 1:02 PM (retry every 5 mins till 5:59 PM)
+   - Article: Night — 9:02 PM (retry every 5 mins till 11:59 PM)
+   - Marketing Email: 10:00 AM daily
+   - Social Media Auto-Poster: 9:30 AM, 2:30 PM, 7:30 PM daily (LinkedIn, FB, Insta)
+   - Accounts: Purge deactivated (15+ days) — 3:00 AM daily
+✅ Social Media Auto-Poster Cron Job Scheduled (Daily at 10:00 AM)
+[ERROR] 13:21:26 Error: listen EADDRINUSE: address already in use 0.0.0.0:5000
+[INFO] 13:33:47 Restarting: C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\src\cron\blogScheduler.ts has been modified
+✅ MongoDB connected successfully
+   - Blog:    Morning — 9:02 AM (retry every 5 mins till 11:59 PM)
+   - News:    Afternoon — 1:02 PM (retry every 5 mins till 5:59 PM)
+   - Article: Night — 9:02 PM (retry every 5 mins till 11:59 PM)
+   - Marketing Email: 10:00 AM daily
+   - Social Media Auto-Poster: 9:30 AM, 2:30 PM, 7:30 PM daily (LinkedIn, FB, Insta)
+   - Accounts: Purge deactivated (15+ days) — 3:00 AM daily
+✅ Social Media Auto-Poster Cron Job Scheduled (Daily at 10:00 AM)
+🚀 Backend running on http://localhost:5000
+📡 API: http://localhost:5000/api/blogs
+⏰ Cron: Daily blog at 9:00 AM IST
+⏰ Daily blog generation cron triggered at 2026-08-05T08:05:00.786Z
+⏰ Afternoon NEWS generation cron triggered at 2026-08-05T08:05:00.815Z
+⚠️ Daily News lock already acquired by another process today. Skipping.
+⚠️ Blog lock already acquired by another process today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T08:10:00.476Z
+⏰ Afternoon NEWS generation cron triggered at 2026-08-05T08:10:00.531Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+⚠️ Daily News lock already acquired by another process today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T08:15:00.237Z
+⏰ Afternoon NEWS generation cron triggered at 2026-08-05T08:15:00.250Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+⚠️ Daily News lock already acquired by another process today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T08:20:00.276Z
+⏰ Afternoon NEWS generation cron triggered at 2026-08-05T08:20:00.312Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+⚠️ Daily News lock already acquired by another process today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T08:25:00.835Z
+⏰ Afternoon NEWS generation cron triggered at 2026-08-05T08:25:00.864Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+⚠️ Daily News lock already acquired by another process today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T08:35:00.596Z
+⏰ Afternoon NEWS generation cron triggered at 2026-08-05T08:35:00.603Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+⚠️ Daily News lock already acquired by another process today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T08:40:00.602Z
+⏰ Afternoon NEWS generation cron triggered at 2026-08-05T08:40:00.617Z
+⚠️ Daily News lock already acquired by another process today. Skipping.
+⚠️ Blog lock already acquired by another process today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T08:45:00.717Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+⏰ Afternoon NEWS generation cron triggered at 2026-08-05T08:45:00.772Z
+⚠️ Morning News already generated today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T08:50:00.719Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+⏰ Afternoon NEWS generation cron triggered at 2026-08-05T08:50:00.860Z
+⚠️ Daily News lock already acquired by another process today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T08:55:00.219Z
+⏰ Afternoon NEWS generation cron triggered at 2026-08-05T08:55:00.223Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+⚠️ Daily News lock already acquired by another process today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T09:00:00.953Z
+⏰ Afternoon NEWS generation cron triggered at 2026-08-05T09:00:00.992Z
+⏰ Afternoon Social Media cron triggered at 2026-08-05T09:00:00.997Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+⚠️ Daily News lock already acquired by another process today. Skipping.
+⚠️ Social Media Afternoon lock already acquired today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T09:05:00.062Z
+⏰ Afternoon NEWS generation cron triggered at 2026-08-05T09:05:00.075Z
+⚠️ Daily News lock already acquired by another process today. Skipping.
+⚠️ Blog lock already acquired by another process today. Skipping.
+⏰ Afternoon Social Media cron triggered at 2026-08-05T09:05:00.185Z
+⚠️ Social Media Afternoon lock already acquired today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T09:10:00.301Z
+⏰ Afternoon NEWS generation cron triggered at 2026-08-05T09:10:00.327Z
+⏰ Afternoon Social Media cron triggered at 2026-08-05T09:10:00.332Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+⚠️ Daily News lock already acquired by another process today. Skipping.
+⚠️ Social Media Afternoon lock already acquired today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T09:15:00.231Z
+⏰ Afternoon NEWS generation cron triggered at 2026-08-05T09:15:00.237Z
+⏰ Afternoon Social Media cron triggered at 2026-08-05T09:15:00.245Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+⚠️ Social Media Afternoon lock already acquired today. Skipping.
+⚠️ Daily News lock already acquired by another process today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T09:20:00.405Z
+⏰ Afternoon NEWS generation cron triggered at 2026-08-05T09:20:00.447Z
+⏰ Afternoon Social Media cron triggered at 2026-08-05T09:20:00.450Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+⚠️ Daily News lock already acquired by another process today. Skipping.
+⚠️ Social Media Afternoon lock already acquired today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T09:25:00.746Z
+⏰ Afternoon NEWS generation cron triggered at 2026-08-05T09:25:00.789Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+⚠️ Daily News lock already acquired by another process today. Skipping.
+⏰ Afternoon Social Media cron triggered at 2026-08-05T09:25:00.869Z
+⚠️ Social Media Afternoon lock already acquired today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T09:35:00.500Z
+⏰ Afternoon NEWS generation cron triggered at 2026-08-05T09:35:00.509Z
+⏰ Afternoon Social Media cron triggered at 2026-08-05T09:35:00.516Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+⚠️ Social Media Afternoon lock already acquired today. Skipping.
+⚠️ Daily News lock already acquired by another process today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T09:40:00.518Z
+⏰ Afternoon NEWS generation cron triggered at 2026-08-05T09:40:00.565Z
+⏰ Afternoon Social Media cron triggered at 2026-08-05T09:40:00.571Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+⚠️ Daily News lock already acquired by another process today. Skipping.
+[SocialMedia] Generating dynamic image for AI Whitepaper Outline with style blog_covers...
+✅ Successfully triggered Social Media post for Afternoon
+⏰ Daily blog generation cron triggered at 2026-08-05T09:45:00.920Z
+⏰ Afternoon NEWS generation cron triggered at 2026-08-05T09:45:00.947Z
+⏰ Afternoon Social Media cron triggered at 2026-08-05T09:45:00.951Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+⚠️ Daily News lock already acquired by another process today. Skipping.
+⚠️ Social Media Afternoon lock already acquired today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T09:50:00.345Z
+⏰ Afternoon NEWS generation cron triggered at 2026-08-05T09:50:00.373Z
+⏰ Afternoon Social Media cron triggered at 2026-08-05T09:50:00.376Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+⚠️ Social Media Afternoon lock already acquired today. Skipping.
+⚠️ Morning News already generated today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T09:55:00.870Z
+⏰ Afternoon NEWS generation cron triggered at 2026-08-05T09:55:00.898Z
+⏰ Afternoon Social Media cron triggered at 2026-08-05T09:55:00.902Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+⚠️ Daily News lock already acquired by another process today. Skipping.
+⚠️ Social Media Afternoon lock already acquired today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T10:00:00.050Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+⏰ Afternoon NEWS generation cron triggered at 2026-08-05T10:00:00.142Z
+⏰ Afternoon Social Media cron triggered at 2026-08-05T10:00:00.158Z
+⚠️ Daily News lock already acquired by another process today. Skipping.
+⚠️ Social Media Afternoon lock already acquired today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T10:05:00.761Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+⏰ Afternoon NEWS generation cron triggered at 2026-08-05T10:05:00.996Z
+⚠️ Daily News lock already acquired by another process today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T10:10:00.744Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+⏰ Afternoon NEWS generation cron triggered at 2026-08-05T10:10:00.930Z
+⏰ Afternoon Social Media cron triggered at 2026-08-05T10:10:00.933Z
+⚠️ Daily News lock already acquired by another process today. Skipping.
+⚠️ Social Media Afternoon lock already acquired today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T10:15:00.753Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+⏰ Afternoon NEWS generation cron triggered at 2026-08-05T10:15:00.860Z
+⚠️ Daily News lock already acquired by another process today. Skipping.
+⏰ Afternoon Social Media cron triggered at 2026-08-05T10:15:00.952Z
+⚠️ Social Media Afternoon lock already acquired today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T10:20:00.434Z
+⏰ Afternoon NEWS generation cron triggered at 2026-08-05T10:20:00.458Z
+⏰ Afternoon Social Media cron triggered at 2026-08-05T10:20:00.462Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+⚠️ Daily News lock already acquired by another process today. Skipping.
+⚠️ Social Media Afternoon lock already acquired today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T10:25:00.906Z
+⏰ Afternoon NEWS generation cron triggered at 2026-08-05T10:25:00.909Z
+⏰ Afternoon Social Media cron triggered at 2026-08-05T10:25:00.912Z
+⚠️ Daily News lock already acquired by another process today. Skipping.
+⚠️ Blog lock already acquired by another process today. Skipping.
+⚠️ Social Media Afternoon lock already acquired today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T10:35:00.475Z
+⏰ Afternoon NEWS generation cron triggered at 2026-08-05T10:35:00.519Z
+⏰ Afternoon Social Media cron triggered at 2026-08-05T10:35:00.530Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+⚠️ Daily News lock already acquired by another process today. Skipping.
+⚠️ Social Media Afternoon lock already acquired today. Skipping.
+✅ MongoDB reconnected successfully
+✅ MongoDB reconnected successfully
+⏰ Daily blog generation cron triggered at 2026-08-05T10:40:00.835Z
+⏰ Afternoon NEWS generation cron triggered at 2026-08-05T10:40:00.845Z
+⏰ Afternoon Social Media cron triggered at 2026-08-05T10:40:00.849Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+⚠️ Daily News lock already acquired by another process today. Skipping.
+⚠️ Social Media Afternoon lock already acquired today. Skipping.
+✅ MongoDB reconnected successfully
+⏰ Daily blog generation cron triggered at 2026-08-05T10:45:00.374Z
+⏰ Afternoon NEWS generation cron triggered at 2026-08-05T10:45:00.389Z
+⏰ Afternoon Social Media cron triggered at 2026-08-05T10:45:00.395Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+⚠️ Daily News lock already acquired by another process today. Skipping.
+⚠️ Social Media Afternoon lock already acquired today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T10:50:00.011Z
+⏰ Afternoon NEWS generation cron triggered at 2026-08-05T10:50:00.015Z
+⏰ Afternoon Social Media cron triggered at 2026-08-05T10:50:00.019Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+⚠️ Social Media Afternoon lock already acquired today. Skipping.
+⚠️ Daily News lock already acquired by another process today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T10:55:00.646Z
+⏰ Afternoon NEWS generation cron triggered at 2026-08-05T10:55:00.650Z
+⏰ Afternoon Social Media cron triggered at 2026-08-05T10:55:00.710Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+⚠️ Daily News lock already acquired by another process today. Skipping.
+⚠️ Social Media Afternoon lock already acquired today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T11:00:00.471Z
+⏰ Afternoon NEWS generation cron triggered at 2026-08-05T11:00:00.473Z
+⏰ Afternoon Social Media cron triggered at 2026-08-05T11:00:00.474Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+⚠️ Daily News lock already acquired by another process today. Skipping.
+⚠️ Social Media Afternoon lock already acquired today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T11:05:00.154Z
+⏰ Afternoon NEWS generation cron triggered at 2026-08-05T11:05:00.157Z
+⏰ Afternoon Social Media cron triggered at 2026-08-05T11:05:00.159Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+⚠️ Daily News lock already acquired by another process today. Skipping.
+⚠️ Social Media Afternoon lock already acquired today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T11:10:00.606Z
+⏰ Afternoon NEWS generation cron triggered at 2026-08-05T11:10:00.609Z
+⏰ Afternoon Social Media cron triggered at 2026-08-05T11:10:00.612Z
+⚠️ Daily News lock already acquired by another process today. Skipping.
+⚠️ Blog lock already acquired by another process today. Skipping.
+⚠️ Social Media Afternoon lock already acquired today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T11:15:00.037Z
+⏰ Afternoon NEWS generation cron triggered at 2026-08-05T11:15:00.039Z
+⏰ Afternoon Social Media cron triggered at 2026-08-05T11:15:00.042Z
+⚠️ Social Media Afternoon lock already acquired today. Skipping.
+⚠️ Daily News lock already acquired by another process today. Skipping.
+⚠️ Blog lock already acquired by another process today. Skipping.
+✅ MongoDB reconnected successfully
+⏰ Daily blog generation cron triggered at 2026-08-05T11:20:00.767Z
+⏰ Afternoon NEWS generation cron triggered at 2026-08-05T11:20:00.791Z
+⏰ Afternoon Social Media cron triggered at 2026-08-05T11:20:00.795Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+⚠️ Daily News lock already acquired by another process today. Skipping.
+⚠️ Social Media Afternoon lock already acquired today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T11:25:00.709Z
+⏰ Afternoon NEWS generation cron triggered at 2026-08-05T11:25:00.733Z
+⏰ Afternoon Social Media cron triggered at 2026-08-05T11:25:00.735Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+⚠️ Daily News lock already acquired by another process today. Skipping.
+⚠️ Social Media Afternoon lock already acquired today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T11:35:00.477Z
+⏰ Afternoon NEWS generation cron triggered at 2026-08-05T11:35:00.501Z
+⏰ Afternoon Social Media cron triggered at 2026-08-05T11:35:00.503Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+⚠️ Daily News lock already acquired by another process today. Skipping.
+⚠️ Social Media Afternoon lock already acquired today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T11:40:00.531Z
+⏰ Afternoon NEWS generation cron triggered at 2026-08-05T11:40:00.554Z
+⏰ Afternoon Social Media cron triggered at 2026-08-05T11:40:00.558Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+⚠️ Daily News lock already acquired by another process today. Skipping.
+⚠️ Social Media Afternoon lock already acquired today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T11:45:00.792Z
+⏰ Afternoon NEWS generation cron triggered at 2026-08-05T11:45:00.823Z
+⏰ Afternoon Social Media cron triggered at 2026-08-05T11:45:00.854Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+⚠️ Daily News lock already acquired by another process today. Skipping.
+⚠️ Social Media Afternoon lock already acquired today. Skipping.
+✅ MongoDB connected successfully
+✅ MongoDB reconnected successfully
+✅ MongoDB connected successfully
+⏰ Daily blog generation cron triggered at 2026-08-05T11:50:00.198Z
+⏰ Afternoon NEWS generation cron triggered at 2026-08-05T11:50:00.213Z
+⏰ Afternoon Social Media cron triggered at 2026-08-05T11:50:00.260Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+⚠️ Daily News lock already acquired by another process today. Skipping.
+[SocialMedia] Generating dynamic image for AI Ad Copy Generator with style blog_covers...
+✅ Successfully triggered Social Media post for Afternoon
+⏰ Afternoon Social Media cron triggered at 2026-08-05T11:55:00.006Z
+⚠️ Social Media Afternoon lock already acquired today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T11:55:00.997Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T12:00:00.567Z
+⏰ Afternoon NEWS generation cron triggered at 2026-08-05T12:00:00.593Z
+⏰ Afternoon Social Media cron triggered at 2026-08-05T12:00:00.596Z
+⚠️ Daily News lock already acquired by another process today. Skipping.
+⚠️ Blog lock already acquired by another process today. Skipping.
+⚠️ Social Media Afternoon lock already acquired today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T12:05:00.835Z
+⏰ Afternoon NEWS generation cron triggered at 2026-08-05T12:05:00.860Z
+⏰ Afternoon Social Media cron triggered at 2026-08-05T12:05:00.863Z
+⚠️ Social Media Afternoon lock already acquired today. Skipping.
+⚠️ Blog lock already acquired by another process today. Skipping.
+⚠️ Daily News lock already acquired by another process today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T12:10:00.091Z
+⏰ Afternoon NEWS generation cron triggered at 2026-08-05T12:10:00.116Z
+⏰ Afternoon Social Media cron triggered at 2026-08-05T12:10:00.119Z
+⚠️ Social Media Afternoon lock already acquired today. Skipping.
+⚠️ Blog lock already acquired by another process today. Skipping.
+⚠️ Daily News lock already acquired by another process today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T12:15:00.760Z
+⏰ Afternoon NEWS generation cron triggered at 2026-08-05T12:15:00.776Z
+⏰ Afternoon Social Media cron triggered at 2026-08-05T12:15:00.779Z
+⚠️ Social Media Afternoon lock already acquired today. Skipping.
+⚠️ Blog lock already acquired by another process today. Skipping.
+⚠️ Daily News lock already acquired by another process today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T12:20:00.524Z
+⏰ Afternoon NEWS generation cron triggered at 2026-08-05T12:20:00.549Z
+⏰ Afternoon Social Media cron triggered at 2026-08-05T12:20:00.554Z
+⚠️ Social Media Afternoon lock already acquired today. Skipping.
+⚠️ Daily News lock already acquired by another process today. Skipping.
+⚠️ Blog lock already acquired by another process today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T12:25:00.960Z
+⏰ Afternoon NEWS generation cron triggered at 2026-08-05T12:25:00.969Z
+⏰ Afternoon Social Media cron triggered at 2026-08-05T12:25:00.972Z
+⚠️ Social Media Afternoon lock already acquired today. Skipping.
+⚠️ Blog lock already acquired by another process today. Skipping.
+⚠️ Daily News lock already acquired by another process today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T12:35:00.916Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T12:40:00.134Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T12:45:00.538Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T12:50:00.762Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T12:55:00.115Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T13:00:00.252Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T13:05:00.252Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T13:10:00.162Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T13:15:00.654Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T13:20:00.872Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+✅ MongoDB reconnected successfully
+✅ MongoDB reconnected successfully
+⏰ Daily blog generation cron triggered at 2026-08-05T13:25:00.183Z
+✅ MongoDB reconnected successfully
+✅ MongoDB connected successfully
+⚠️ Blog lock already acquired by another process today. Skipping.
+✅ MongoDB reconnected successfully
+✅ MongoDB reconnected successfully
+✅ MongoDB reconnected successfully
+✅ MongoDB connected successfully
+⏰ Daily blog generation cron triggered at 2026-08-05T13:35:00.956Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T13:40:00.722Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T13:45:00.299Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T13:50:00.710Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T13:55:00.959Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+⏰ Evening Social Media cron triggered at 2026-08-05T14:00:00.161Z
+⚠️ Social Media Evening lock already acquired today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T14:00:00.553Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T14:05:00.325Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+⏰ Evening Social Media cron triggered at 2026-08-05T14:05:00.984Z
+⚠️ Social Media Evening lock already acquired today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T14:10:00.109Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+⏰ Evening Social Media cron triggered at 2026-08-05T14:10:00.752Z
+⚠️ Social Media Evening lock already acquired today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T14:15:00.276Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+⏰ Evening Social Media cron triggered at 2026-08-05T14:15:00.909Z
+⚠️ Social Media Evening lock already acquired today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T14:20:00.260Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+⏰ Evening Social Media cron triggered at 2026-08-05T14:20:00.940Z
+⚠️ Social Media Evening lock already acquired today. Skipping.
+⏰ Evening Social Media cron triggered at 2026-08-05T14:25:00.020Z
+⚠️ Social Media Evening lock already acquired today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T14:25:00.439Z
+⚠️ Blog already generated today. Skipping.
+⏰ Evening Social Media cron triggered at 2026-08-05T14:35:00.442Z
+⚠️ Social Media Evening lock already acquired today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T14:35:00.848Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+⏰ Evening Social Media cron triggered at 2026-08-05T14:40:00.034Z
+⏰ Daily blog generation cron triggered at 2026-08-05T14:40:00.375Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+[SocialMedia] Generating dynamic image for AI App Architecture Planner with style news_covers...
+✅ Successfully triggered Social Media post for Evening
+⏰ Evening Social Media cron triggered at 2026-08-05T14:45:00.184Z
+⚠️ Social Media Evening lock already acquired today. Skipping.
+⏰ Daily blog generation cron triggered at 2026-08-05T14:45:00.491Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+✅ MongoDB reconnected successfully
+✅ MongoDB reconnected successfully
+✅ MongoDB reconnected successfully
+✅ MongoDB reconnected successfully
+✅ MongoDB reconnected successfully
+✅ MongoDB connected successfully
+⏰ Evening Social Media cron triggered at 2026-08-05T15:40:00.619Z
+⏰ Daily blog generation cron triggered at 2026-08-05T15:40:00.663Z
+⏰ Night ARTICLE generation cron triggered at 2026-08-05T15:40:00.676Z
+⚠️ Blog lock already acquired by another process today. Skipping.
+⚠️ Social Media Evening lock already acquired today. Skipping.
+⚠️ Article lock already acquired by another process today. Skipping.

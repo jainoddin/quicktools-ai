@@ -1604,3 +1604,346 @@ Error: listen EADDRINUSE: address already in use 0.0.0.0:5000
     at listenInCluster (node:net:1997:12)
     at node:net:2206:7
     at processTicksAndRejections (node:internal/process/task_queues:89:21)
+⚠️ GitHub OAuth not configured (GITHUB_CLIENT_ID / GITHUB_CLIENT_SECRET missing)
+(node:48744) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Error: listen EADDRINUSE: address already in use 0.0.0.0:5000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at node:net:2206:7
+    at processTicksAndRejections (node:internal/process/task_queues:89:21)
+⚠️ GitHub OAuth not configured (GITHUB_CLIENT_ID / GITHUB_CLIENT_SECRET missing)
+(node:39580) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Error: listen EADDRINUSE: address already in use 0.0.0.0:5000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at node:net:2206:7
+    at processTicksAndRejections (node:internal/process/task_queues:89:21)
+⚠️ GitHub OAuth not configured (GITHUB_CLIENT_ID / GITHUB_CLIENT_SECRET missing)
+(node:54616) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+⚠️ GitHub OAuth not configured (GITHUB_CLIENT_ID / GITHUB_CLIENT_SECRET missing)
+(node:26960) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+⚠️ GitHub OAuth not configured (GITHUB_CLIENT_ID / GITHUB_CLIENT_SECRET missing)
+(node:48952) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Error: listen EADDRINUSE: address already in use 0.0.0.0:5000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at node:net:2206:7
+    at processTicksAndRejections (node:internal/process/task_queues:89:21)
+⚠️ GitHub OAuth not configured (GITHUB_CLIENT_ID / GITHUB_CLIENT_SECRET missing)
+(node:39256) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+❌ Failed to generate or post to social media: Error: Failed to generate image from pollinations
+    at generateAndUploadImage (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\src\services\r2.service.ts:96:11)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at generateAndPostToSocialMedia (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\src\services\socialMediaGenerator.ts:67:27)
+    at executeSocialMediaJob (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\src\cron\blogScheduler.ts:379:5)
+    at Task.node_cron_1.default.schedule.timezone [as _execution] (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\src\cron\blogScheduler.ts:278:5)
+Error acquiring lock: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-y83j2vv-shard-00-00.ircj0dm.mongodb.net
+    at Topology.selectServer (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\node_modules\mongodb\src\sdam\topology.ts:635:30)
+    at runNextTicks (node:internal/process/task_queues:64:5)
+    at listOnTimeout (node:internal/timers:547:9)
+    at processTimers (node:internal/timers:521:7)
+    at tryOperation (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\node_modules\mongodb\src\operations\execute_operation.ts:202:16)
+    at executeOperation (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\node_modules\mongodb\src\operations\execute_operation.ts:119:12)
+    at Collection.findOneAndUpdate (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\node_modules\mongodb\src\collection.ts:1041:12)
+    at model.Query._findOneAndUpdate (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\node_modules\mongoose\lib\query.js:3536:13)
+    at model.Query.exec (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\node_modules\mongoose\lib\query.js:4627:63)
+    at acquireLock (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\src\cron\blogScheduler.ts:96:22) {
+  errorLabelSet: Set(0) {},
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'ac-y83j2vv-shard-00-00.ircj0dm.mongodb.net:27017' => [ServerDescription],
+      'ac-y83j2vv-shard-00-01.ircj0dm.mongodb.net:27017' => [ServerDescription],
+      'ac-y83j2vv-shard-00-02.ircj0dm.mongodb.net:27017' => [ServerDescription]
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-642u79-shard-0',
+    maxElectionId: new ObjectId('7fffffff000000000000014c'),
+    maxSetVersion: 320,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [cause]: MongoNetworkError: getaddrinfo ENOTFOUND ac-y83j2vv-shard-00-00.ircj0dm.mongodb.net
+      at TLSSocket.<anonymous> (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\node_modules\mongodb\src\cmap\connect.ts:395:16)
+      at Object.onceWrapper (node:events:634:26)
+      at TLSSocket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:170:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+      at processTicksAndRejections (node:internal/process/task_queues:89:21) {
+    errorLabelSet: Set(1) { 'ResetPool' },
+    beforeHandshake: false,
+    [cause]: Error: getaddrinfo ENOTFOUND ac-y83j2vv-shard-00-00.ircj0dm.mongodb.net
+        at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:111:26) {
+      errno: -3008,
+      code: 'ENOTFOUND',
+      syscall: 'getaddrinfo',
+      hostname: 'ac-y83j2vv-shard-00-00.ircj0dm.mongodb.net'
+    }
+  }
+}
+Error acquiring lock: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-y83j2vv-shard-00-00.ircj0dm.mongodb.net
+    at Topology.selectServer (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\node_modules\mongodb\src\sdam\topology.ts:635:30)
+    at tryOperation (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\node_modules\mongodb\src\operations\execute_operation.ts:202:16)
+    at executeOperation (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\node_modules\mongodb\src\operations\execute_operation.ts:119:12)
+    at Collection.findOneAndUpdate (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\node_modules\mongodb\src\collection.ts:1041:12)
+    at model.Query._findOneAndUpdate (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\node_modules\mongoose\lib\query.js:3536:13)
+    at model.Query.exec (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\node_modules\mongoose\lib\query.js:4627:63)
+    at acquireLock (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\src\cron\blogScheduler.ts:96:22)
+    at generateSingleNewsJob (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\src\cron\blogScheduler.ts:302:21)
+    at Task.node_cron_1.default.schedule.timezone [as _execution] (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\src\cron\blogScheduler.ts:226:5) {
+  errorLabelSet: Set(0) {},
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'ac-y83j2vv-shard-00-00.ircj0dm.mongodb.net:27017' => [ServerDescription],
+      'ac-y83j2vv-shard-00-01.ircj0dm.mongodb.net:27017' => [ServerDescription],
+      'ac-y83j2vv-shard-00-02.ircj0dm.mongodb.net:27017' => [ServerDescription]
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-642u79-shard-0',
+    maxElectionId: new ObjectId('7fffffff000000000000014c'),
+    maxSetVersion: 320,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [cause]: MongoNetworkError: getaddrinfo ENOTFOUND ac-y83j2vv-shard-00-00.ircj0dm.mongodb.net
+      at TLSSocket.<anonymous> (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\node_modules\mongodb\src\cmap\connect.ts:395:16)
+      at Object.onceWrapper (node:events:634:26)
+      at TLSSocket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:170:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+      at processTicksAndRejections (node:internal/process/task_queues:89:21) {
+    errorLabelSet: Set(1) { 'ResetPool' },
+    beforeHandshake: false,
+    [cause]: Error: getaddrinfo ENOTFOUND ac-y83j2vv-shard-00-00.ircj0dm.mongodb.net
+        at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:111:26) {
+      errno: -3008,
+      code: 'ENOTFOUND',
+      syscall: 'getaddrinfo',
+      hostname: 'ac-y83j2vv-shard-00-00.ircj0dm.mongodb.net'
+    }
+  }
+}
+Error acquiring lock: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-y83j2vv-shard-00-00.ircj0dm.mongodb.net
+    at Topology.selectServer (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\node_modules\mongodb\src\sdam\topology.ts:635:30)
+    at runNextTicks (node:internal/process/task_queues:64:5)
+    at processTimers (node:internal/timers:518:9)
+    at tryOperation (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\node_modules\mongodb\src\operations\execute_operation.ts:202:16)
+    at executeOperation (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\node_modules\mongodb\src\operations\execute_operation.ts:119:12)
+    at Collection.findOneAndUpdate (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\node_modules\mongodb\src\collection.ts:1041:12)
+    at model.Query._findOneAndUpdate (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\node_modules\mongoose\lib\query.js:3536:13)
+    at model.Query.exec (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\node_modules\mongoose\lib\query.js:4627:63)
+    at acquireLock (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\src\cron\blogScheduler.ts:96:22)
+    at executeSocialMediaJob (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\src\cron\blogScheduler.ts:373:21) {
+  errorLabelSet: Set(0) {},
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'ac-y83j2vv-shard-00-00.ircj0dm.mongodb.net:27017' => [ServerDescription],
+      'ac-y83j2vv-shard-00-01.ircj0dm.mongodb.net:27017' => [ServerDescription],
+      'ac-y83j2vv-shard-00-02.ircj0dm.mongodb.net:27017' => [ServerDescription]
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-642u79-shard-0',
+    maxElectionId: new ObjectId('7fffffff000000000000014c'),
+    maxSetVersion: 320,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [cause]: MongoNetworkError: getaddrinfo ENOTFOUND ac-y83j2vv-shard-00-00.ircj0dm.mongodb.net
+      at TLSSocket.<anonymous> (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\node_modules\mongodb\src\cmap\connect.ts:395:16)
+      at Object.onceWrapper (node:events:634:26)
+      at TLSSocket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:170:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+      at processTicksAndRejections (node:internal/process/task_queues:89:21) {
+    errorLabelSet: Set(1) { 'ResetPool' },
+    beforeHandshake: false,
+    [cause]: Error: getaddrinfo ENOTFOUND ac-y83j2vv-shard-00-00.ircj0dm.mongodb.net
+        at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:111:26) {
+      errno: -3008,
+      code: 'ENOTFOUND',
+      syscall: 'getaddrinfo',
+      hostname: 'ac-y83j2vv-shard-00-00.ircj0dm.mongodb.net'
+    }
+  }
+}
+Error handling cron failure email: MongoServerSelectionError: getaddrinfo ENOENT ac-y83j2vv-shard-00-00.ircj0dm.mongodb.net
+    at Topology.selectServer (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\node_modules\mongodb\src\sdam\topology.ts:635:30)
+    at runNextTicks (node:internal/process/task_queues:64:5)
+    at listOnTimeout (node:internal/timers:547:9)
+    at processTimers (node:internal/timers:521:7)
+    at tryOperation (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\node_modules\mongodb\src\operations\execute_operation.ts:202:16)
+    at executeOperation (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\node_modules\mongodb\src\operations\execute_operation.ts:119:12)
+    at FindCursor._initialize (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\node_modules\mongodb\src\cursor\find_cursor.ts:92:22)
+    at FindCursor.cursorInit (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\node_modules\mongodb\src\cursor\abstract_cursor.ts:949:21)
+    at FindCursor.fetchBatch (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\node_modules\mongodb\src\cursor\abstract_cursor.ts:987:7)
+    at FindCursor.next (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\node_modules\mongodb\src\cursor\abstract_cursor.ts:608:9) {
+  errorLabelSet: Set(0) {},
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'ac-y83j2vv-shard-00-00.ircj0dm.mongodb.net:27017' => [ServerDescription],
+      'ac-y83j2vv-shard-00-01.ircj0dm.mongodb.net:27017' => [ServerDescription],
+      'ac-y83j2vv-shard-00-02.ircj0dm.mongodb.net:27017' => [ServerDescription]
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-642u79-shard-0',
+    maxElectionId: new ObjectId('7fffffff000000000000014c'),
+    maxSetVersion: 320,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [cause]: MongoNetworkError: getaddrinfo ENOENT ac-y83j2vv-shard-00-00.ircj0dm.mongodb.net
+      at TLSSocket.<anonymous> (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\node_modules\mongodb\src\cmap\connect.ts:395:16)
+      at Object.onceWrapper (node:events:634:26)
+      at TLSSocket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:170:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+      at processTicksAndRejections (node:internal/process/task_queues:89:21) {
+    errorLabelSet: Set(1) { 'ResetPool' },
+    beforeHandshake: false,
+    [cause]: Error: getaddrinfo ENOENT ac-y83j2vv-shard-00-00.ircj0dm.mongodb.net
+        at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:111:26) {
+      errno: -4058,
+      code: 'ENOENT',
+      syscall: 'getaddrinfo',
+      hostname: 'ac-y83j2vv-shard-00-00.ircj0dm.mongodb.net'
+    }
+  }
+}
+Error handling cron failure email: MongoServerSelectionError: getaddrinfo ENOENT ac-y83j2vv-shard-00-00.ircj0dm.mongodb.net
+    at Topology.selectServer (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\node_modules\mongodb\src\sdam\topology.ts:635:30)
+    at runNextTicks (node:internal/process/task_queues:64:5)
+    at listOnTimeout (node:internal/timers:547:9)
+    at processTimers (node:internal/timers:521:7)
+    at tryOperation (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\node_modules\mongodb\src\operations\execute_operation.ts:202:16)
+    at executeOperation (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\node_modules\mongodb\src\operations\execute_operation.ts:119:12)
+    at FindCursor._initialize (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\node_modules\mongodb\src\cursor\find_cursor.ts:92:22)
+    at FindCursor.cursorInit (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\node_modules\mongodb\src\cursor\abstract_cursor.ts:949:21)
+    at FindCursor.fetchBatch (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\node_modules\mongodb\src\cursor\abstract_cursor.ts:987:7)
+    at FindCursor.next (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\node_modules\mongodb\src\cursor\abstract_cursor.ts:608:9) {
+  errorLabelSet: Set(0) {},
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'ac-y83j2vv-shard-00-00.ircj0dm.mongodb.net:27017' => [ServerDescription],
+      'ac-y83j2vv-shard-00-01.ircj0dm.mongodb.net:27017' => [ServerDescription],
+      'ac-y83j2vv-shard-00-02.ircj0dm.mongodb.net:27017' => [ServerDescription]
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-642u79-shard-0',
+    maxElectionId: new ObjectId('7fffffff000000000000014c'),
+    maxSetVersion: 320,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [cause]: MongoNetworkError: getaddrinfo ENOENT ac-y83j2vv-shard-00-00.ircj0dm.mongodb.net
+      at TLSSocket.<anonymous> (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\node_modules\mongodb\src\cmap\connect.ts:395:16)
+      at Object.onceWrapper (node:events:634:26)
+      at TLSSocket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:170:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+      at processTicksAndRejections (node:internal/process/task_queues:89:21) {
+    errorLabelSet: Set(1) { 'ResetPool' },
+    beforeHandshake: false,
+    [cause]: Error: getaddrinfo ENOENT ac-y83j2vv-shard-00-00.ircj0dm.mongodb.net
+        at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:111:26) {
+      errno: -4058,
+      code: 'ENOENT',
+      syscall: 'getaddrinfo',
+      hostname: 'ac-y83j2vv-shard-00-00.ircj0dm.mongodb.net'
+    }
+  }
+}
+Error handling cron failure email: MongoServerSelectionError: getaddrinfo ENOENT ac-y83j2vv-shard-00-00.ircj0dm.mongodb.net
+    at Topology.selectServer (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\node_modules\mongodb\src\sdam\topology.ts:635:30)
+    at tryOperation (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\node_modules\mongodb\src\operations\execute_operation.ts:202:16)
+    at executeOperation (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\node_modules\mongodb\src\operations\execute_operation.ts:119:12)
+    at FindCursor._initialize (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\node_modules\mongodb\src\cursor\find_cursor.ts:92:22)
+    at FindCursor.cursorInit (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\node_modules\mongodb\src\cursor\abstract_cursor.ts:949:21)
+    at FindCursor.fetchBatch (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\node_modules\mongodb\src\cursor\abstract_cursor.ts:987:7)
+    at FindCursor.next (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\node_modules\mongodb\src\cursor\abstract_cursor.ts:608:9)
+    at Collection.findOne (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\node_modules\mongodb\src\collection.ts:552:20)
+    at model.Query._findOne (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\node_modules\mongoose\lib\query.js:2710:15)
+    at model.Query.exec (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\node_modules\mongoose\lib\query.js:4627:63) {
+  errorLabelSet: Set(0) {},
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'ac-y83j2vv-shard-00-00.ircj0dm.mongodb.net:27017' => [ServerDescription],
+      'ac-y83j2vv-shard-00-01.ircj0dm.mongodb.net:27017' => [ServerDescription],
+      'ac-y83j2vv-shard-00-02.ircj0dm.mongodb.net:27017' => [ServerDescription]
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-642u79-shard-0',
+    maxElectionId: new ObjectId('7fffffff000000000000014c'),
+    maxSetVersion: 320,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [cause]: MongoNetworkError: getaddrinfo ENOENT ac-y83j2vv-shard-00-00.ircj0dm.mongodb.net
+      at TLSSocket.<anonymous> (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\node_modules\mongodb\src\cmap\connect.ts:395:16)
+      at Object.onceWrapper (node:events:634:26)
+      at TLSSocket.emit (node:events:519:28)
+      at emitErrorNT (node:internal/streams/destroy:170:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+      at processTicksAndRejections (node:internal/process/task_queues:89:21) {
+    errorLabelSet: Set(1) { 'ResetPool' },
+    beforeHandshake: false,
+    [cause]: Error: getaddrinfo ENOENT ac-y83j2vv-shard-00-00.ircj0dm.mongodb.net
+        at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:111:26) {
+      errno: -4058,
+      code: 'ENOENT',
+      syscall: 'getaddrinfo',
+      hostname: 'ac-y83j2vv-shard-00-00.ircj0dm.mongodb.net'
+    }
+  }
+}
+⚠️ MongoDB disconnected. Attempting to reconnect...
+⚠️ MongoDB disconnected. Attempting to reconnect...
+❌ Failed to generate or post to social media: Error: Failed to generate image from pollinations
+    at generateAndUploadImage (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\src\services\r2.service.ts:96:11)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at generateAndPostToSocialMedia (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\src\services\socialMediaGenerator.ts:67:27)
+    at executeSocialMediaJob (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\src\cron\blogScheduler.ts:379:5)
+    at Task.node_cron_1.default.schedule.timezone [as _execution] (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\src\cron\blogScheduler.ts:278:5)
+⚠️ MongoDB disconnected. Attempting to reconnect...
+⚠️ MongoDB disconnected. Attempting to reconnect...
+❌ Failed to generate or post to social media: Error: Failed to generate image from pollinations
+    at generateAndUploadImage (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\src\services\r2.service.ts:96:11)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at generateAndPostToSocialMedia (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\src\services\socialMediaGenerator.ts:67:27)
+    at executeSocialMediaJob (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\src\cron\blogScheduler.ts:379:5)
+    at Task.node_cron_1.default.schedule.timezone [as _execution] (C:\Users\jain\.gemini\antigravity\scratch\quicktools-project\backend\src\cron\blogScheduler.ts:286:5)
+⚠️ MongoDB disconnected. Attempting to reconnect...
