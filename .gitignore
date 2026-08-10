@@ -2,6 +2,14 @@ node_modules/
 .next/
 dist/
 build/
+.vscode/
+
+# Local audits, scratch output, and temporary helper files
+scratch/
+final_deployment_audit.md
+walkthrough.md
+read.ps1
+temp_doc.txt
 .env
 .env.*
 !.env.example
